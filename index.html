@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="/css/reset.css" />
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="/css/media.css" />
@@ -99,7 +100,7 @@
 				</div>
 
 				<div class="intro__right">
-					<div class="intro__right-title">Ваша идея - наш код</div>
+					<div class="intro__right-title">От идеи до истории успеха</div>
 					<img src="/images/background.png" alt="Иллюстрация" />
 					<!-- <div class="intro__right-item">
 							<div class="intro__right-item-title">Скорость запуска</div>
@@ -112,347 +113,354 @@
 		<section class="tariffs">
 			<div class="container">
 				<div class="tariffs__title">Цены на разработку сайтов</div>
-				<div class="tariffs__list">
-					<div class="tariffs__item">
-						<div class="tariffs__item-top">
-							<div class="tariffs__item-title">Сайт-визитка</div>
-							<div class="tariffs__item-desc">
-								Простой сайт <br />
-								за 2 дня
+				<div class="tariffs__wrapper swiper swiper--tariffs">
+					<div class="tariffs__list swiper-wrapper">
+						<div class="tariffs__item swiper-slide">
+							<div class="tariffs__item-top">
+								<div class="tariffs__item-title">Сайт-визитка</div>
+								<div class="tariffs__item-desc">
+									Простой сайт <br />
+									за 2 дня
+								</div>
+								<ul class="tariffs__item-list">
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="card-sim"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Базовый дизайн</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="panels-top-left"></i>
+										</div>
+										<div class="tariffs__item-elem-title">До 3 страниц</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="table-of-contents"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Наполнение контентом</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="message-square-text"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Поддержка 1 месяц</div>
+									</li>
+								</ul>
 							</div>
-							<ul class="tariffs__item-list">
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="card-sim"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Базовый дизайн</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="panels-top-left"></i>
-									</div>
-									<div class="tariffs__item-elem-title">До 3 страниц</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="table-of-contents"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Наполнение контентом</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="message-square-text"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Поддержка 1 месяц</div>
-								</li>
-							</ul>
-						</div>
-						<div class="tariffs__item-bottom">
-							<div class="tariffs__item-bottom-price">
-								10 000 <span>₽</span>
-								<div class="tariffs__item-bottom-price--old">15 000 ₽</div>
+							<div class="tariffs__item-bottom">
+								<div class="tariffs__item-bottom-price">
+									10 000 <span>₽</span>
+									<div class="tariffs__item-bottom-price--old">15 000 ₽</div>
+								</div>
+								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 							</div>
-							<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 						</div>
-					</div>
 
-					<div class="tariffs__item">
-						<div class="tariffs__item-top">
-							<div class="tariffs__item-title">Адаптивная вёрстка</div>
-							<div class="tariffs__item-desc">
-								По готовому дизайну <br />
-								за 3 дня
+						<div class="tariffs__item swiper-slide">
+							<div class="tariffs__item-top">
+								<div class="tariffs__item-title">Адаптивная вёрстка</div>
+								<div class="tariffs__item-desc">
+									По готовому дизайну <br />
+									за 3 дня
+								</div>
+								<ul class="tariffs__item-list">
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="monitor-smartphone"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Адаптация под все устройства</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="code"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Чистый код</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="gauge"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Оптимизация загрузки</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="test-tube-diagonal"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Кроссбраузерное тестирование</div>
+									</li>
+								</ul>
 							</div>
-							<ul class="tariffs__item-list">
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="monitor-smartphone"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Адаптация под все устройства</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="code"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Чистый код</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="gauge"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Оптимизация загрузки</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="test-tube-diagonal"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Кроссбраузерное тестирование</div>
-								</li>
-							</ul>
-						</div>
-						<div class="tariffs__item-bottom">
-							<div class="tariffs__item-bottom-price">
-								5 000 <span>₽</span>
-								<div class="tariffs__item-bottom-price--old">8 000 ₽</div>
+							<div class="tariffs__item-bottom">
+								<div class="tariffs__item-bottom-price">
+									5 000 <span>₽</span>
+									<div class="tariffs__item-bottom-price--old">8 000 ₽</div>
+								</div>
+								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 							</div>
-							<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 						</div>
-					</div>
 
-					<div class="tariffs__item">
-						<div class="tariffs__item-top">
-							<div class="tariffs__item-title">Корпоративный сайт</div>
-							<div class="tariffs__item-desc">
-								Многостраничный сайт <br />
-								за 7 дней
+						<div class="tariffs__item swiper-slide">
+							<div class="tariffs__item-top">
+								<div class="tariffs__item-title">Корпоративный сайт</div>
+								<div class="tariffs__item-desc">
+									Многостраничный сайт <br />
+									за 7 дней
+								</div>
+								<ul class="tariffs__item-list">
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="figma"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Индивидуальный дизайн</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="layers"></i>
+										</div>
+										<div class="tariffs__item-elem-title">До 10 страниц</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="target"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Базовая SEO-оптимизация</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="headset"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Техническая поддержка 1 месяц</div>
+									</li>
+								</ul>
 							</div>
-							<ul class="tariffs__item-list">
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="figma"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Индивидуальный дизайн</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="layers"></i>
-									</div>
-									<div class="tariffs__item-elem-title">До 10 страниц</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="target"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Базовая SEO-оптимизация</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="headset"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Техническая поддержка 1 месяц</div>
-								</li>
-							</ul>
-						</div>
-						<div class="tariffs__item-bottom">
-							<div class="tariffs__item-bottom-price">
-								25 000 <span>₽</span>
-								<div class="tariffs__item-bottom-price--old">35 000 ₽</div>
+							<div class="tariffs__item-bottom">
+								<div class="tariffs__item-bottom-price">
+									25 000 <span>₽</span>
+									<div class="tariffs__item-bottom-price--old">35 000 ₽</div>
+								</div>
+								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 							</div>
-							<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 						</div>
-					</div>
 
-					<div class="tariffs__item">
-						<div class="tariffs__item-top">
-							<div class="tariffs__item-title">Продвижение сайта</div>
-							<div class="tariffs__item-desc">
-								Увеличение трафика <br />
-								за 30 дней
+						<div class="tariffs__item swiper-slide">
+							<div class="tariffs__item-top">
+								<div class="tariffs__item-title">Продвижение сайта</div>
+								<div class="tariffs__item-desc">
+									Увеличение трафика <br />
+									за 30 дней
+								</div>
+								<ul class="tariffs__item-list">
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="arrow-down-up"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Анализ конкурентов</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="keyboard"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Подбор ключевых слов</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="shield-plus"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Настройка рекламы</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="clipboard-minus"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Ежемесячный отчет</div>
+									</li>
+								</ul>
 							</div>
-							<ul class="tariffs__item-list">
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="arrow-down-up"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Анализ конкурентов</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="keyboard"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Подбор ключевых слов</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="shield-plus"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Настройка рекламы</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="clipboard-minus"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Ежемесячный отчет</div>
-								</li>
-							</ul>
-						</div>
-						<div class="tariffs__item-bottom">
-							<div class="tariffs__item-bottom-price">
-								10 000 <span>₽</span>
-								<div class="tariffs__item-bottom-price--old">15 000 ₽</div>
+							<div class="tariffs__item-bottom">
+								<div class="tariffs__item-bottom-price">
+									10 000 <span>₽</span>
+									<div class="tariffs__item-bottom-price--old">15 000 ₽</div>
+								</div>
+								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 							</div>
-							<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 						</div>
-					</div>
 
-					<div class="tariffs__item">
-						<div class="tariffs__item-top">
-							<div class="tariffs__item-title">Дизайн сайтов</div>
-							<div class="tariffs__item-desc">
-								Уникальный дизайн <br />
-								за 5 дней
+						<div class="tariffs__item swiper-slide">
+							<div class="tariffs__item-top">
+								<div class="tariffs__item-title">Дизайн сайтов</div>
+								<div class="tariffs__item-desc">
+									Уникальный дизайн <br />
+									за 5 дней
+								</div>
+								<ul class="tariffs__item-list">
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="component"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Прототипирование</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="puzzle"></i>
+										</div>
+										<div class="tariffs__item-elem-title">UI/UX дизайн</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="codesandbox"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Фирменный стиль</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="file-stack"></i>
+										</div>
+										<div class="tariffs__item-elem-title">2 правки бесплатно</div>
+									</li>
+								</ul>
 							</div>
-							<ul class="tariffs__item-list">
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="component"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Прототипирование</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="puzzle"></i>
-									</div>
-									<div class="tariffs__item-elem-title">UI/UX дизайн</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="codesandbox"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Фирменный стиль</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="file-stack"></i>
-									</div>
-									<div class="tariffs__item-elem-title">2 правки бесплатно</div>
-								</li>
-							</ul>
-						</div>
-						<div class="tariffs__item-bottom">
-							<div class="tariffs__item-bottom-price">
-								10 000 <span>₽</span>
-								<div class="tariffs__item-bottom-price--old">14 000 ₽</div>
+							<div class="tariffs__item-bottom">
+								<div class="tariffs__item-bottom-price">
+									10 000 <span>₽</span>
+									<div class="tariffs__item-bottom-price--old">14 000 ₽</div>
+								</div>
+								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 							</div>
-							<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 						</div>
-					</div>
 
-					<div class="tariffs__item">
-						<div class="tariffs__item-top">
-							<div class="tariffs__item-title">Лендинг страница</div>
-							<div class="tariffs__item-desc">
-								Одностраничный сайт <br />
-								за 3 дня
+						<div class="tariffs__item swiper-slide">
+							<div class="tariffs__item-top">
+								<div class="tariffs__item-title">Лендинг страница</div>
+								<div class="tariffs__item-desc">
+									Одностраничный сайт <br />
+									за 3 дня
+								</div>
+								<ul class="tariffs__item-list">
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="hammer"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Конструктор продающей страницы</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="blocks"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Более 80 видов блоков</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="command"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Бесплатное наполнение</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="arrow-big-up-dash"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Управление контекстной рекламой</div>
+									</li>
+								</ul>
 							</div>
-							<ul class="tariffs__item-list">
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="hammer"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Конструктор продающей страницы</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="blocks"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Более 80 видов блоков</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="command"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Бесплатное наполнение</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="arrow-big-up-dash"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Управление контекстной рекламой</div>
-								</li>
-							</ul>
-						</div>
-						<div class="tariffs__item-bottom">
-							<div class="tariffs__item-bottom-price">
-								15 000 <span>₽</span>
-								<div class="tariffs__item-bottom-price--old">21 950 ₽</div>
+							<div class="tariffs__item-bottom">
+								<div class="tariffs__item-bottom-price">
+									15 000 <span>₽</span>
+									<div class="tariffs__item-bottom-price--old">21 950 ₽</div>
+								</div>
+								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 							</div>
-							<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 						</div>
-					</div>
 
-					<div class="tariffs__item">
-						<div class="tariffs__item-top">
-							<div class="tariffs__item-title">Интернет-магазин</div>
-							<div class="tariffs__item-desc">Полнофункциональный магазин за 14 дней</div>
-							<ul class="tariffs__item-list">
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="shopping-cart"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Каталог товаров</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="nfc"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Интеграция платежных систем</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="truck"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Настройка доставки</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="shield-user"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Админ-панель для управления</div>
-								</li>
-							</ul>
-						</div>
-						<div class="tariffs__item-bottom">
-							<div class="tariffs__item-bottom-price">
-								30 000 <span>₽</span>
-								<div class="tariffs__item-bottom-price--old">40 000 ₽</div>
+						<div class="tariffs__item swiper-slide">
+							<div class="tariffs__item-top">
+								<div class="tariffs__item-title">Интернет-магазин</div>
+								<div class="tariffs__item-desc">Полнофункциональный магазин за 14 дней</div>
+								<ul class="tariffs__item-list">
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="shopping-cart"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Каталог товаров</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="nfc"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Интеграция платежных систем</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="truck"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Настройка доставки</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="shield-user"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Админ-панель для управления</div>
+									</li>
+								</ul>
 							</div>
-							<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
+							<div class="tariffs__item-bottom">
+								<div class="tariffs__item-bottom-price">
+									30 000 <span>₽</span>
+									<div class="tariffs__item-bottom-price--old">40 000 ₽</div>
+								</div>
+								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
+							</div>
 						</div>
-					</div>
 
-					<div class="tariffs__item">
-						<div class="tariffs__item-top">
-							<div class="tariffs__item-title">SEO-оптимизация</div>
-							<div class="tariffs__item-desc">
-								Повышение позиций в поиске <br />
-								за 30 дней
+						<div class="tariffs__item swiper-slide">
+							<div class="tariffs__item-top">
+								<div class="tariffs__item-title">SEO-оптимизация</div>
+								<div class="tariffs__item-desc">
+									Повышение позиций в поиске <br />
+									за 30 дней
+								</div>
+								<ul class="tariffs__item-list">
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="crosshair"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Аудит сайта</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="letter-text"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Оптимизация ключевых слов</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="text-search"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Контент-стратегия</div>
+									</li>
+									<li class="tariffs__item-elem">
+										<div class="tariffs__item-elem-icon">
+											<i data-lucide="file-audio"></i>
+										</div>
+										<div class="tariffs__item-elem-title">Аналитика и отчеты</div>
+									</li>
+								</ul>
 							</div>
-							<ul class="tariffs__item-list">
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="crosshair"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Аудит сайта</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="letter-text"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Оптимизация ключевых слов</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="text-search"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Контент-стратегия</div>
-								</li>
-								<li class="tariffs__item-elem">
-									<div class="tariffs__item-elem-icon">
-										<i data-lucide="file-audio"></i>
-									</div>
-									<div class="tariffs__item-elem-title">Аналитика и отчеты</div>
-								</li>
-							</ul>
-						</div>
-						<div class="tariffs__item-bottom">
-							<div class="tariffs__item-bottom-price">
-								10 000 <span>₽</span>
-								<div class="tariffs__item-bottom-price--old">15 000 ₽</div>
+							<div class="tariffs__item-bottom">
+								<div class="tariffs__item-bottom-price">
+									10 000 <span>₽</span>
+									<div class="tariffs__item-bottom-price--old">15 000 ₽</div>
+								</div>
+								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 							</div>
-							<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
 						</div>
 					</div>
+				</div>
+
+				<div class="swiper-buttons">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 				</div>
 			</div>
 		</section>
@@ -511,38 +519,61 @@
 			<div class="reviews__content mp-wrapp">
 				<div class="reviews__title">Разработка+ глазами наших клиентов</div>
 
-				<div class="reviews__list">
-					<div class="reviews__item">
-						<div class="reviews__item-text">
-							До этого делал сайт на другой платформе, но там только магазины и урезанный функционал. Познакомился с и с
-							тех пор запустил уже 20 сайтов на их платформе. Хотел сказать о их движке, огромный выбор шаблонов,...
-						</div>
-						<div class="reviews__item-bottom">
-							<div class="reviews__item-icon">
-								<img src="./images/icons/reviews.svg" alt="" />
+				<div class="reviews__wrapper swiper swiper--reviews">
+					<div class="reviews__list swiper-wrapper">
+						<div class="reviews__item swiper-slide">
+							<div class="reviews__item-text">
+								До этого делал сайт на другой платформе, но там только магазины и урезанный функционал. Познакомился с и
+								с тех пор запустил уже 20 сайтов на их платформе. Хотел сказать о их движке, огромный выбор шаблонов,...
 							</div>
-							<div class="reviews__item-wrap">
-								<div class="reviews__item-title">Дмитрий</div>
-								<div class="reviews__item-desc">владелец интернет-магазина</div>
+							<div class="reviews__item-bottom">
+								<div class="reviews__item-icon">
+									<img src="./images/icons/reviews.svg" alt="" />
+								</div>
+								<div class="reviews__item-wrap">
+									<div class="reviews__item-title">Дмитрий</div>
+									<div class="reviews__item-desc">владелец интернет-магазина</div>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="reviews__item">
-						<div class="reviews__item-text">
-							До этого делал сайт на другой платформе, но там только магазины и урезанный функционал. Познакомился с и с
-							тех пор запустил уже 20 сайтов на их платформе. Хотел сказать о их движке, огромный выбор шаблонов,...
-						</div>
-						<div class="reviews__item-bottom">
-							<div class="reviews__item-icon">
-								<img src="./images/icons/reviews.svg" alt="" />
+						<div class="reviews__item swiper-slide">
+							<div class="reviews__item-text">
+								До этого делал сайт на другой платформе, но там только магазины и урезанный функционал. Познакомился с и
+								с тех пор запустил уже 20 сайтов на их платформе. Хотел сказать о их движке, огромный выбор шаблонов,...
 							</div>
-							<div class="reviews__item-wrap">
-								<div class="reviews__item-title">Дмитрий</div>
-								<div class="reviews__item-desc">владелец интернет-магазина</div>
+							<div class="reviews__item-bottom">
+								<div class="reviews__item-icon">
+									<img src="./images/icons/reviews.svg" alt="" />
+								</div>
+								<div class="reviews__item-wrap">
+									<div class="reviews__item-title">Дмитрий</div>
+									<div class="reviews__item-desc">владелец интернет-магазина</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="reviews__item swiper-slide">
+							<div class="reviews__item-text">
+								До этого делал сайт на другой платформе, но там только магазины и урезанный функционал. Познакомился с и
+								с тех пор запустил уже 20 сайтов на их платформе. Хотел сказать о их движке, огромный выбор шаблонов,...
+							</div>
+							<div class="reviews__item-bottom">
+								<div class="reviews__item-icon">
+									<img src="./images/icons/reviews.svg" alt="" />
+								</div>
+								<div class="reviews__item-wrap">
+									<div class="reviews__item-title">Дмитрий</div>
+									<div class="reviews__item-desc">владелец интернет-магазина</div>
+								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+				
+				<div class="swiper-buttons">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 				</div>
 			</div>
 		</section>
@@ -867,6 +898,7 @@
 			<div class="scroll-to-top__text">Наверх</div>
 		</div>
 
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 		<script src="/scripts/script.js"></script>
 	</body>

@@ -8,12 +8,14 @@ body {
 	max-width: 1440px;
 	padding: 0 32px;
 	margin: 0 auto;
+	position: relative;
 }
 section {
 	position: relative;
 	padding: 3vw 0;
 }
 .mp-wrapp {
+	position: relative;
 	max-width: 1216px;
 	margin-left: auto;
 	margin-right: auto;
@@ -21,7 +23,7 @@ section {
 	padding-right: 32px;
 }
 
-/* ========= Header ========= */
+/* ========= header ========= */
 .header {
 	padding: 12px 0;
 	border-bottom: 1px solid #e7e9ed;
@@ -223,9 +225,9 @@ section {
 	width: 525px;
 }
 .intro__right-title {
-	top: -10%;
-	right: -50px;
-	transform: translateX(calc(-50% + 506px));
+	top: -15%;
+	left: 0;
+	transform: translateX(calc(-50% + 350px));
 
 	color: #fff;
 	font-size: min(6.25vw, 27px);
@@ -239,6 +241,7 @@ section {
 
 /* ========= tariffs ========= */
 .tariffs {
+	padding-bottom: 4vw;
 }
 .container {
 }
@@ -249,12 +252,8 @@ section {
 	text-align: center;
 }
 .tariffs__list {
-	/* padding-bottom: 80px; */
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 16px;
 }
 .tariffs__item {
 	width: calc(25% - 16px);
@@ -309,7 +308,6 @@ section {
 	margin-right: min(2.5vw, 12px);
 	color: #490b9f;
 }
-
 .tariffs__item-elem-title {
 	opacity: 0.8;
 	font-size: 14px;
@@ -362,9 +360,48 @@ section {
 	letter-spacing: -0.2px;
 	transition: all 0.3s ease;
 }
-
+/* ========= swiper tariffs ========= */
+.swiper-buttons {
+	position: relative;
+	margin-top: 20px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	width: 40px;
+	height: 40px;
+	background: #f7f8fb;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%;
+	position: absolute;
+	bottom: 0;
+	top: 100%;
+	margin-top: 0;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	display: none;
+}
+.swiper-button-prev {
+	left: auto;
+	right: 60px;
+	background-image: url('/images/icons/prev.svg');
+}
+.swiper-button-next {
+	right: 0;
+	background-image: url('/images/icons/next.svg');
+}
 /* ========= features ========= */
 .features {
+	margin: 0 64px;
+	border-radius: 32px;
+	padding: 80px 0;
+	background: linear-gradient(to top right, #9900ff1b, #490b9f2a);
+	overflow: hidden;
 }
 .features__title {
 	font-size: 40px;
@@ -441,7 +478,6 @@ section {
 .reviews__list {
 	display: flex;
 	align-items: center;
-	gap: 30px;
 }
 .reviews__item {
 	width: calc(50% - 30px);
