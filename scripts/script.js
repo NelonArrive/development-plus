@@ -3,7 +3,7 @@ import { TELEGRAM_TOKEN, TELEGRAM_CHAT_ID } from './config.js'
 // Accordion
 const accordion = document.querySelector('.faq__item-title')
 
-for (i = 0; i < accordion.length; i++) {
+for (let i = 0; i < accordion.length; i++) {
 	accordion[i].addEventListener('click', () => {
 		this.classList.toggle('active')
 	})
@@ -89,8 +89,8 @@ const swiperPortfolio = new Swiper('.swiper--portfolio', {
 	loop: true,
 	spaceBetween: 30,
 	slidesPerView: 2,
-	speed: 600,
-	autoplay: { delay: 4000 },
+	speed: 1000,
+	autoplay: { delay: 6000 },
 
 	navigation: {
 		nextEl: '.swiper-button-next',
