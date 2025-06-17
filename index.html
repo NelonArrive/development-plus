@@ -49,13 +49,40 @@
 								<div class="header__contacts-text">@development_plus</div>
 							</div>
 						</div>
+
+						<div class="menu__btn">Заказать сайт</div>
 					</div>
+
+					<button class="menu__btn-burger" id="burger" title="Кнопка открытия меню">
+						<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="48" height="48" rx="24" fill="#F5F5F5"></rect>
+							<path
+								d="M15.75 24h16.5m-16.5-5.5h16.5m-11 11h11"
+								stroke="#2B2D33"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></path>
+						</svg>
+					</button>
 				</div>
 			</div>
 		</header>
 
-		<div class="menu">
+		<div class="menu" id="menu">
 			<div class="menu__inner mp-wrapp">
+				<button class="menu__btn-close" id="close" title="Кнопка закрытия меню">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9 9L23 23M23 9L9 23"
+							stroke="white"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						></path>
+					</svg>
+				</button>
+
 				<nav class="menu__nav">
 					<ul class="menu__list">
 						<li class="menu__item"><a href="#" class="menu__link active">Разработка сайтов</a></li>
@@ -102,10 +129,6 @@
 				<div class="intro__right">
 					<div class="intro__right-title">От идеи до истории успеха</div>
 					<img src="/images/background.png" alt="Иллюстрация" />
-					<!-- <div class="intro__right-item">
-							<div class="intro__right-item-title">Скорость запуска</div>
-							<span>от 1 дня</span>
-						</div> -->
 				</div>
 			</div>
 		</div>
@@ -479,6 +502,13 @@
 								<div class="advantage__item-icon">
 									<i data-lucide="ban"></i>
 								</div>
+								<div class="advantage__item-title">Меняют условия и стоимость в процессе без предупреждения?</div>
+							</div>
+
+							<div class="advantage__item">
+								<div class="advantage__item-icon">
+									<i data-lucide="ban"></i>
+								</div>
 								<div class="advantage__item-title">Обещают быстро, а тянут неделями?</div>
 							</div>
 
@@ -521,7 +551,19 @@
 						</div>
 					</div>
 					<div class="advantage__right">
-						<img src="./images/advantages-1.png" alt="человек не довольный, вектор" />
+						<img class="advantage__right-people" src="./images/advantages-1.png" alt="человек не довольный, вектор" />
+						<div class="brows">
+							<img src="./images/icons/eyebrow-left.png" alt="eyebrow left" />
+							<img src="./images/icons/eyebrow-right.png" alt="eyebrow right" />
+						</div>
+						<div class="eyes">
+							<div class="eye__left">
+								<img src="./images/icons/eye.png" alt="eye left" />
+							</div>
+							<div class="eye__right">
+								<img src="./images/icons/eye.png" alt="eye right" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

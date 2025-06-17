@@ -66,6 +66,18 @@ const swiperTariffs = new Swiper('.swiper--tariffs', {
 	lazy: true,
 	autoplay: { delay: 5000 },
 
+	breakpoints: {
+		320: {
+			slidesPerView: 1
+		},
+		690: {
+			slidesPerView: 2
+		},
+		1240: {
+			slidesPerView: 4
+		}
+	},
+
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev'
@@ -89,7 +101,7 @@ const swiperPortfolio = new Swiper('.swiper--portfolio', {
 	loop: true,
 	spaceBetween: 30,
 	slidesPerView: 2,
-	speed: 1000,
+	speed: 500,
 	autoplay: { delay: 6000 },
 
 	navigation: {
@@ -137,4 +149,15 @@ forms.forEach(form => {
 
 		form.reset()
 	})
+})
+
+// ================= BURGER MENU =================
+const burger = document.getElementById('burger')
+const menu = document.getElementById('menu')
+const closeIcon = document.getElementById('close')
+
+burger.addEventListener('click', () => {
+	menu.classList.toggle('active')
+	const isActive = menu.classList.contains('active')
+	closeIcon.style.display = isActive ? 'block' : 'none'
 })

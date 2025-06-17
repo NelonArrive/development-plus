@@ -1,0 +1,138 @@
+@media screen and (max-width: 1920px) {
+	.intro {
+		margin-left: 64px;
+		margin-right: 64px;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.intro {
+		margin: 0 32px;
+	}
+	.intro__right-title {
+		left: -50px;
+	}
+}
+
+@media screen and (max-width: 1330px) {
+	.advantage__inner.mp-wrapp {
+		padding: 0 15px;
+	}
+	.advantage {
+		margin: 0 15px;
+	}
+	.advantage__main {
+		gap: 30px;
+	}
+	.brows {
+		left: 29%;
+	}
+	.eye__right {
+		left: 36%;
+	}
+	.eye__left {
+		left: 30%;
+	}
+	.advantage__right:hover .eye__right {
+		left: 37%;
+	}
+	.advantage__right:hover .eye__left {
+		left: 31%;
+	}
+}
+
+@media screen and (max-width: 1240px) {
+	.intro__btn {
+		margin: 0;
+	}
+	.intro {
+		background: linear-gradient(180deg, rgba(73, 11, 159, 0.3), rgba(153, 0, 255, 0.3), white);
+	}
+	.intro__inner {
+		padding-top: 56px;
+		padding-bottom: 56px;
+	}
+	.intro__title,
+	.intro__desc {
+		text-align: center;
+	}
+	.intro__right-title {
+		top: 7%;
+		left: 0;
+		transform: inherit;
+	}
+	.intro__left {
+		justify-content: center;
+		align-items: center;
+	}
+	.intro__right {
+		margin: 0 auto;
+	}
+	.intro__right img {
+		top: 80px;
+		position: relative;
+		width: 100%;
+		max-width: 436px;
+	}
+	.intro__inner {
+		flex-direction: column;
+	}
+	.advantage__inner.mp-wrapp,
+	.mp-wrapp {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+	.advantage__right {
+		display: none;
+	}
+	.advantage__main {
+		gap: 0;
+		align-items: center;
+		justify-content: center;
+	}
+	.advantage__left {
+		width: 100%;
+	}
+	.advantage__note-img {
+		height: 132px;
+	}
+	.advantage__note-img img {
+		max-height: 185px;
+	}
+}
+
+@media screen and (max-width: 1120px) {
+	.header__contacts {
+		display: flex;
+		gap: 10px;
+	}
+	.header {
+		border: 0;
+	}
+	.header__contacts-list .menu__btn {
+		display: block;
+		margin-left: 5px;
+	}
+	.header__contacts-list {
+		gap: 10px;
+	}
+	.menu__btn {
+		display: none;
+	}
+	.menu__nav {
+		margin: 0 auto;
+	}
+	.header__contacts-item:nth-child(1),
+	.header__contacts-item:nth-child(3) {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.menu {
+		display: none;
+	}
+	.menu__btn-burger {
+		display: block;
+	}
+}
