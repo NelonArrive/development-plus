@@ -154,10 +154,12 @@ forms.forEach(form => {
 // ================= BURGER MENU =================
 const burger = document.getElementById('burger')
 const menu = document.getElementById('menu')
-const closeIcon = document.getElementById('close')
+const close = document.getElementById('close')
 
 burger.addEventListener('click', () => {
 	menu.classList.toggle('active')
-	const isActive = menu.classList.contains('active')
-	closeIcon.style.display = isActive ? 'block' : 'none'
+})
+
+close.addEventListener('click', () => {
+	menu.classList.remove('active')
 })
