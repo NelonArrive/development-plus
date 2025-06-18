@@ -62,6 +62,12 @@ section {
 .header__contacts-text {
 	opacity: 0.7;
 }
+.header__contacts-text a {
+	color: #000;
+}
+.header__contacts-text a:hover {
+	color: #490b9f;
+}
 
 /* ========= menu ========= */
 .menu {
