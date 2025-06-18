@@ -154,15 +154,19 @@ forms.forEach(form => {
 // ================= BURGER MENU =================
 const burger = document.getElementById('burger')
 const menu = document.getElementById('menu')
-const menuNav = document.querySelector('menu__nav')
+const menuNav = document.querySelector('.menu__nav')
 const close = document.getElementById('close')
 
 burger.addEventListener('click', () => {
-	menu.classList.toggle('active')
-	menuNav.style.transform = 'translate(0)'
+	menu.classList.add('active')
+	menuNav.style.display = 'block'
+	menuNav.style.transform = 'translateX(0)'
+	document.body.style.overflow = 'hidden';
 })
 
 close.addEventListener('click', () => {
 	menu.classList.remove('active')
-	menuNav.style.transform = 'translate(100%)'
+	menuNav.style.display = 'none'
+	menuNav.style.transform = 'translateX(100%)'
+	document.body.style.overflow = ''
 })
