@@ -91,6 +91,15 @@ const swiperReviews = new Swiper('.swiper--reviews', {
 	speed: 600,
 	autoplay: { delay: 4000 },
 
+	breakpoints: {
+		320: {
+			slidesPerView: 1
+		},
+		1120: {
+			slidesPerView: 2
+		}
+	},
+
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev'
@@ -103,6 +112,15 @@ const swiperPortfolio = new Swiper('.swiper--portfolio', {
 	slidesPerView: 2,
 	speed: 500,
 	autoplay: { delay: 6000 },
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1
+		},
+		992: {
+			slidesPerView: 2
+		}
+	},
 
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -154,19 +172,14 @@ forms.forEach(form => {
 // ================= BURGER MENU =================
 const burger = document.getElementById('burger')
 const menu = document.getElementById('menu')
-const menuNav = document.querySelector('.menu__nav')
 const close = document.getElementById('close')
 
 burger.addEventListener('click', () => {
 	menu.classList.add('active')
-	menuNav.style.display = 'block'
-	menuNav.style.transform = 'translateX(0)'
-	document.body.style.overflow = 'hidden';
+	document.body.style.overflow = 'hidden'
 })
 
 close.addEventListener('click', () => {
 	menu.classList.remove('active')
-	menuNav.style.display = 'none'
-	menuNav.style.transform = 'translateX(100%)'
 	document.body.style.overflow = ''
 })

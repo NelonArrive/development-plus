@@ -111,7 +111,28 @@
 }
 
 @media screen and (max-width: 1120px) {
-	.header__contacts-title {
+	.portfolio__item-bottom {
+		font-size: 21px;
+		margin-top: 30px;
+	}
+	.portfolio__item-services-item {
+		font-size: 22px;
+	}
+	.portfolio__item-title {
+		justify-content: flex-end;
+	}
+	.portfolio__item {
+		padding: 30px;
+	}
+	.portfolio__item-right {
+		width: 100%;
+	}
+	.portfolio__item-left {
+		width: 100%;
+	}
+	.portfolio__item-top {
+		flex-direction: column;
+		align-items: flex-start;
 	}
 	.intro__title {
 		text-align: center;
@@ -233,20 +254,16 @@
 	.features__item:nth-child(3) {
 		width: 100%;
 	}
-	.menu {
-		opacity: 0;
-		padding: 0;
-		transition: all 0.3s ease-in;
-		position: inherit;
-	}
 	.menu__inner {
 		justify-content: flex-end;
 	}
 	.menu__btn-burger {
 		display: block;
 	}
-	.menu.active {
-		opacity: 1;
+	.menu {
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 		position: fixed;
 		top: 0;
 		bottom: 0;
@@ -255,28 +272,14 @@
 		background: #0000006b;
 		backdrop-filter: blur(10px);
 	}
-	.menu__btn-close {
-	}
-	.menu.active .menu__btn-close {
-		display: block;
-	}
-	.menu.active body {
-		overflow: hidden;
-	}
-	.menu__list {
-		flex-direction: column;
-		align-items: flex-start;
+	.menu.active {
+		opacity: 1;
+		visibility: visible;
 	}
 	.menu__nav {
 		width: 350px;
-		margin: 10px 0;
-		display: none;
-		transform: translateX(100%);
-		transition: transform 0.3s ease-in-out;
 		border-top-left-radius: 10px;
 		border-bottom-left-radius: 10px;
-		margin-right: 0;
-		margin-left: 0;
 		background: #fff;
 		position: fixed;
 		top: 0;
@@ -284,6 +287,28 @@
 		bottom: 0;
 		padding: 18px 16px 16px;
 		overflow: auto;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in-out;
+	}
+	.menu.active .menu__nav {
+		transform: translateX(0);
+	}
+	.menu__btn-close {
+		display: block;
+		background-color: #6c38cc;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		padding-top: 3px;
+		margin-left: auto;
+		margin-bottom: 10px;
+	}
+	.menu.active .menu__btn-close {
+		display: block;
+	}
+	.menu__list {
+		flex-direction: column;
+		align-items: flex-start;
 	}
 	.menu__item {
 		margin: 0;

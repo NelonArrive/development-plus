@@ -140,17 +140,6 @@ section {
 .menu__btn-close {
 	display: none;
 }
-.menu__btn-close {
-	background-color: #6c38cc;
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	padding-top: 3px;
-	margin-left: auto;
-	margin-bottom: 10px;
-}
 
 /* ========= intro ========= */
 .intro {
