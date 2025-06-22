@@ -15,15 +15,6 @@
 }
 
 @media screen and (max-width: 1330px) {
-	.features__list {
-		flex-wrap: wrap;
-	}
-	.features__item {
-		width: calc(50% - 30px);
-	}
-	.features__item:nth-child(3) {
-		width: 100%;
-	}
 	.advantage__inner.mp-wrapp {
 		padding: 0 15px;
 	}
@@ -102,18 +93,39 @@
 	.advantage__left {
 		width: 100%;
 	}
-	.advantage__note-img {
-		height: 132px;
-	}
-	.advantage__note-img img {
-		max-height: 185px;
-	}
 }
 
 @media screen and (max-width: 1120px) {
+	.tariffs {
+		padding-bottom: 7vw;
+	}
+	.features__list {
+		align-items: normal;
+	}
+	.features__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: auto;
+		width: calc(50% - 30px);
+	}
+	.features__item-top {
+		flex-direction: row;
+		align-items: center;
+	}
+	.features__list {
+		flex-wrap: wrap;
+	}
+	.features__item:nth-child(3) {
+		width: 100%;
+	}
+	.portfolio__item-title-icon {
+		margin-left: 20px;
+		display: block;
+	}
 	.portfolio__item-bottom {
 		font-size: 21px;
-		margin-top: 30px;
+		margin-top: 0px;
 	}
 	.portfolio__item-services-item {
 		font-size: 22px;
@@ -185,7 +197,12 @@
 		width: min(15vw, 64px);
 		height: min(15vw, 64px);
 		min-width: min(15vw, 64px);
-		margin-right: min(5vw, 24px);
+		margin-right: min(5vw, 18px);
+		margin-bottom: 0;
+	}
+	.features__item-icon img {
+		width: 30px;
+		height: 30px;
 	}
 	.reviews__title {
 		margin-bottom: min(10vw, 40px);
@@ -246,13 +263,30 @@
 }
 
 @media screen and (max-width: 992px) {
-	.features__list {
+	.scroll-to-top.active {
+		bottom: 25px;
+		left: 20px;
+	}
+	.global__messengers {
+		bottom: 25px;
+		right: 20px;
 	}
 	.features__item {
 		width: 100%;
 	}
 	.features__item:nth-child(3) {
 		width: 100%;
+	}
+	.header {
+		padding: 7px 0;
+		box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.04);
+		position: sticky;
+		left: 0;
+		right: 0;
+		top: 0;
+		background: #ffffff72;
+		backdrop-filter: blur(10px);
+		z-index: 10;
 	}
 	.menu__inner {
 		justify-content: flex-end;
@@ -326,11 +360,86 @@
 }
 
 @media screen and (max-width: 768px) {
+	.global__messengers-btn {
+		width: 56px;
+		height: 56px;
+	}
+	.global__messengers-btn svg {
+		width: 29px;
+	}
+	.intro__services {
+		justify-content: center;
+	}
+	.menu__btn {
+		display: none !important;
+	}
+	.faq__wrapper {
+		padding: 0;
+	}
+	.faq {
+		margin: 0 30px;
+	}
 }
 
 @media screen and (max-width: 640px) {
+	.faq {
+		margin: 0;
+		border-radius: 0px;
+	}
+	.advantage__inner.mp-wrapp,
+	.mp-wrapp {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.intro-circle {
+		left: -50px;
+	}
+	.intro-circle.two {
+		right: -50px;
+		left: inherit;
+	}
+	.intro__inner {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.header__contacts-item {
+		display: none;
+	}
 	.advantage__note-title {
 		font-size: min(4.0625vw, 18px);
+	}
+	.advantage__list {
+		display: grid;
+		grid-gap: 8px;
+		grid-template-columns: inherit;
+		margin-bottom: min(2.5vw, 16px);
+	}
+	.intro,
+	.advantage {
+		margin: 0;
+		border-radius: 0px;
+	}
+	.advantage__item-icon {
+		margin: 0;
+	}
+	.advantage__item {
+		flex-direction: row;
+		gap: 10px;
+		align-items: center;
+	}
+	.scroll-to-top__text {
+		display: none;
+	}
+	.scroll-to-top {
+		width: inherit;
+		background: linear-gradient(to top right, #9900ff, #490b9f);
+	}
+	.scroll-to-top__icon {
+		margin-right: 0;
+		background: none;
+	}
+	.form__main form {
+		flex-direction: column;
 	}
 }
 
