@@ -9,9 +9,6 @@
 	.intro {
 		margin: 0 32px;
 	}
-	.intro__right-title {
-		left: -50px;
-	}
 }
 
 @media screen and (max-width: 1330px) {
@@ -42,6 +39,11 @@
 }
 
 @media screen and (max-width: 1240px) {
+	.intro__right-title {
+		top: 10%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 	.intro__btn {
 		margin: 0;
 	}
@@ -55,11 +57,6 @@
 	.intro__title,
 	.intro__desc {
 		text-align: center;
-	}
-	.intro__right-title {
-		top: 7%;
-		left: 0;
-		transform: inherit;
 	}
 	.intro__left {
 		justify-content: center;
@@ -158,9 +155,6 @@
 	.intro__btn {
 		font-size: 16px;
 		padding: min(5.3125vw, 20px) min(10vw, 40px);
-	}
-	.intro__right-title {
-		font-size: min(6.25vw, 30px);
 	}
 	.tariffs__title {
 		font-size: min(6.875vw, 32px);
@@ -263,6 +257,10 @@
 }
 
 @media screen and (max-width: 992px) {
+	.features__title br,
+	.advantage__title br {
+		display: none;
+	}
 	.scroll-to-top.active {
 		bottom: 25px;
 		left: 20px;
@@ -360,6 +358,20 @@
 }
 
 @media screen and (max-width: 768px) {
+	.intro-circle {
+		background: linear-gradient(to top right, rgb(153 0 255 / 36%), rgb(94 33 180 / 70%));
+	}
+	.intro-circle.two {
+		background: linear-gradient(to top right, rgba(73, 11, 159, 0.358), rgba(153, 0, 255, 0.507));
+	}
+	.intro {
+		background: linear-gradient(180deg, rgba(73, 11, 159, 0.3), rgba(153, 0, 255, 0.3), white);
+	}
+
+	.intro__title,
+	.intro__desc {
+		font-family: 'Montserrat', sans-serif;
+	}
 	.global__messengers-btn {
 		width: 56px;
 		height: 56px;
@@ -382,6 +394,56 @@
 }
 
 @media screen and (max-width: 640px) {
+	.footer__logo {
+		font-size: 25px;
+	}
+	.footer__socials-icon {
+		width: 30px;
+		height: 30px;
+	}
+	.intro__desc br {
+		display: none;
+	}
+	.portfolio__item-services-list {
+		margin: 10px 0;
+	}
+	.reviews__item,
+	.features__item,
+	.portfolio__item,
+	.tariffs__item {
+		padding: 20px;
+		border-radius: 12px;
+	}
+	.advantage__note-title {
+		font-size: min(4.0625vw, 14px);
+		padding: 7px;
+	}
+	.advantage__note-img {
+		width: 100px;
+		line-height: 0;
+	}
+	.intro {
+		background: linear-gradient(180deg, white 0%, rgba(73, 11, 159, 0.3) 30%, rgba(153, 0, 255, 0.3) 50%, white 100%);
+	}
+	.footer__head {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+	.footer__socials {
+		margin: 0;
+	}
+	.footer__content {
+		align-items: center;
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 30px;
+	}
+	.footer__paysystems-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 8px;
+	}
 	.faq {
 		margin: 0;
 		border-radius: 0px;
@@ -393,6 +455,10 @@
 	}
 	.intro-circle {
 		left: -50px;
+		top: 150px;
+		opacity: 0.5;
+		width: 150px;
+		height: 150px;
 	}
 	.intro-circle.two {
 		right: -50px;
@@ -404,9 +470,6 @@
 	}
 	.header__contacts-item {
 		display: none;
-	}
-	.advantage__note-title {
-		font-size: min(4.0625vw, 18px);
 	}
 	.advantage__list {
 		display: grid;
@@ -420,6 +483,7 @@
 		border-radius: 0px;
 	}
 	.advantage__item-icon {
+		min-width: max-content;
 		margin: 0;
 	}
 	.advantage__item {
@@ -441,15 +505,69 @@
 	.form__main form {
 		flex-direction: column;
 	}
+	.faq {
+		padding: min(12.5vw, 48px) 0;
+	}
+	.footer__main {
+		gap: 35px;
+	}
+	.footer {
+		padding: 60px 0 10px;
+	}
 }
 
 @media screen and (max-width: 576px) {
+	.intro__services {
+		gap: 8px;
+	}
+	.intro__services-item {
+		padding: 4px 10px;
+		font-size: 14px;
+	}
 	.features__item-top {
 		align-items: center;
 	}
 }
 
 @media screen and (max-width: 480px) {
+	.faq__item-title {
+		padding: 18px 0;
+	}
+	.faq__item-body-inner {
+		font-size: 16px;
+		padding: 0 0 15px;
+	}
+	.portfolio__item-services-item {
+		font-size: 15px;
+	}
+	.portfolio__item-bottom {
+		font-size: 15px;
+	}
+	.advantage__item {
+		border-radius: min(5vw, 16px);
+		padding: min(5vw, 18px);
+	}
+	.intro__right-title {
+		font-size: min(8.25vw, 35px);
+	}
+	.intro__title br {
+		display: none;
+	}
+	.advantage__note {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+	.advantage__note-img {
+		width: 138px;
+	}
+	.advantage__note-title {
+		font-size: min(4.0625vw, 18px);
+		width: 100%;
+		padding: 16px;
+	}
+	.intro__title {
+		font-size: min(8.5vw, 40px);
+	}
 }
 
 @media screen and (max-width: 320px) {

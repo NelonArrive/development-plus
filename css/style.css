@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 body {
 	font-family: 'Manrope', serif;
@@ -248,15 +250,15 @@ section {
 }
 .intro__right-title {
 	top: -15%;
+	font-family: 'Great Vibes', cursive;
 	left: 0;
 	transform: translateX(calc(-50% + 350px));
 
 	color: #fff;
-	font-size: min(6.25vw, 27px);
+	font-size: 40px;
 	font-weight: 900;
 	line-height: 100%;
-	letter-spacing: -0.379px;
-	text-transform: uppercase;
+	letter-spacing: 2px;
 	position: absolute;
 	white-space: nowrap;
 }
@@ -587,6 +589,7 @@ section {
 
 /* ========= features ========= */
 .features {
+	padding: min(12.5vw, 48px) 0;
 }
 .features__title {
 	font-size: 40px;
@@ -1170,4 +1173,288 @@ section {
 	line-height: 19px;
 	letter-spacing: -0.4px;
 	color: #292929;
+}
+
+.popup-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	opacity: 0;
+	pointer-events: none;
+	transform: scale(1.05);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.popup-overlay.active {
+	display: flex;
+	opacity: 1;
+	pointer-events: all;
+	transform: scale(1);
+}
+
+.popup {
+	padding: 30px;
+	background: white;
+	position: relative;
+	max-width: 500px;
+	width: 90%;
+	border-radius: 15px;
+	transition: all 0.2s ease-in;
+}
+
+.popup-title {
+	font-size: 28px;
+	line-height: 36px;
+	margin-bottom: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.popup form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.popup input,
+.popup textarea {
+	padding: 15px 20px;
+	border-radius: 10px;
+	border: 1px solid #490b9f4e;
+	font-size: 16px;
+	width: 100%;
+}
+
+textarea {
+	resize: vertical;
+	min-height: 100px;
+}
+
+.popup-label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 14px;
+}
+
+.popup-label span {
+	font-size: 14px;
+	opacity: 0.7;
+}
+
+.popup-close {
+	background-color: #490b9f;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 10px;
+	color: #fff;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.3s ease;
+}
+
+.popup-close:hover {
+	background-color: #3a087f;
+}
+
+.btn {
+	background: #490b9f;
+	color: white;
+	padding: 15px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background 0.3s ease;
+}
+
+.btn:hover {
+	background: #3a087f;
+}
+
+/* Checkbox Styles */
+.checkbox-wrapper-44 input[type='checkbox'] {
+	display: none;
+}
+
+.checkbox-wrapper-44 .toggleButton {
+	cursor: pointer;
+	display: block;
+	transform-origin: 50% 50%;
+	transition: transform 0.14s ease;
+}
+
+.checkbox-wrapper-44 .toggleButton:active {
+	transform: rotateX(30deg);
+}
+
+.checkbox-wrapper-44 .toggleButton input + div {
+	border: 3px solid rgba(0, 0, 0, 0.2);
+	border-radius: 50%;
+	position: relative;
+	width: 44px;
+	height: 44px;
+}
+
+.checkbox-wrapper-44 .toggleButton input + div svg {
+	fill: none;
+	stroke-width: 3.6;
+	stroke: #000;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	left: -3px;
+	top: -3px;
+	right: -3px;
+	bottom: -3px;
+	z-index: 1;
+	stroke-dashoffset: 124.6;
+	stroke-dasharray: 0 162.6 133 29.6;
+	transition: all 0.4s ease 0s;
+}
+
+.checkbox-wrapper-44 .toggleButton input + div:before,
+.checkbox-wrapper-44 .toggleButton input + div:after {
+	content: '';
+	width: 3px;
+	height: 16px;
+	background: #000;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border-radius: 5px;
+}
+
+.checkbox-wrapper-44 .toggleButton input + div:before {
+	opacity: 0;
+	transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
+	animation: bounceInBefore-44 0.3s linear forwards 0.3s;
+}
+
+.checkbox-wrapper-44 .toggleButton input + div:after {
+	opacity: 0;
+	transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
+	animation: bounceInAfter-44 0.3s linear forwards 0.3s;
+}
+
+.checkbox-wrapper-44 .toggleButton input:checked + div svg {
+	stroke-dashoffset: 162.6;
+	stroke-dasharray: 0 162.6 28 134.6;
+	transition: all 0.4s ease 0.2s;
+}
+
+.checkbox-wrapper-44 .toggleButton input:checked + div:before {
+	opacity: 0;
+	transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
+	animation: bounceInBeforeDont-44 0.3s linear forwards 0s;
+}
+
+.checkbox-wrapper-44 .toggleButton input:checked + div:after {
+	opacity: 0;
+	transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
+	animation: bounceInAfterDont-44 0.3s linear forwards 0s;
+}
+
+@keyframes bounceInBefore-44 {
+	0% {
+		opacity: 0;
+		transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
+	}
+	50% {
+		opacity: 0.9;
+		transform: scale(1.1) translate(-50%, -50%) rotate(45deg);
+	}
+	80% {
+		opacity: 1;
+		transform: scale(0.89) translate(-50%, -50%) rotate(45deg);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1) translate(-50%, -50%) rotate(45deg);
+	}
+}
+
+@keyframes bounceInAfter-44 {
+	0% {
+		opacity: 0;
+		transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
+	}
+	50% {
+		opacity: 0.9;
+		transform: scale(1.1) translate(-50%, -50%) rotate(-45deg);
+	}
+	80% {
+		opacity: 1;
+		transform: scale(0.89) translate(-50%, -50%) rotate(-45deg);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1) translate(-50%, -50%) rotate(-45deg);
+	}
+}
+
+@keyframes bounceInBeforeDont-44 {
+	0% {
+		opacity: 1;
+		transform: scale(1) translate(-50%, -50%) rotate(45deg);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
+	}
+}
+
+@keyframes bounceInAfterDont-44 {
+	0% {
+		opacity: 1;
+		transform: scale(1) translate(-50%, -50%) rotate(-45deg);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
+	}
+}
+
+@media (max-width: 600px) {
+	.popup {
+		padding: 20px;
+		width: 95%;
+	}
+
+	.popup-title {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.popup input,
+	.popup textarea {
+		padding: 12px 15px;
+		font-size: 14px;
+	}
+
+	.btn {
+		width: 100%;
+		padding: 12px;
+	}
+
+	.popup-close {
+		width: 35px;
+		height: 35px;
+		font-size: 18px;
+		right: 5px;
+		top: 5px;
+	}
 }

@@ -52,7 +52,7 @@
 							</div>
 						</div>
 
-						<div class="menu__btn">Заказать сайт</div>
+						<div class="menu__btn open-popup">Заказать сайт</div>
 					</div>
 
 					<button class="menu__btn-burger" id="burger" title="Кнопка открытия меню">
@@ -97,7 +97,7 @@
 						<li class="menu__item"><a href="#" class="menu__link">Поддержка</a></li>
 					</ul>
 				</nav>
-				<a href="" class="menu__btn"> Заказать сайт </a>
+				<button href="" class="menu__btn open-popup">Заказать сайт</button>
 			</div>
 		</div>
 
@@ -124,7 +124,7 @@
 						Запустите сайт и получите в подарок пакет<br />
 						инструментов для его развития
 					</div>
-					<div class="intro__btn">Начать прямо сейчас</div>
+					<div class="intro__btn open-popup">Начать прямо сейчас</div>
 				</div>
 
 				<div class="intro__right">
@@ -492,8 +492,8 @@
 		<section class="advantage">
 			<div class="advantage__inner mp-wrapp">
 				<div class="advantage__title">
-					Случалось ли вам работать с разработчиками <br />
-					сайтов, которые:
+					Случалось ли вам работать с<br />
+					разработчиками, которые:
 				</div>
 
 				<div class="advantage__main">
@@ -1002,7 +1002,7 @@
 			<div class="form__content mp-wrapp">
 				<div class="form__title">До старта - всего один шаг</div>
 				<div class="form__desc">
-					Эта информация поможет нам погрузиться в контекст задачи. А детали мы обсудим на встрече
+					Эта информация поможет нам погрузиться в контекст задачи. А детали мы обсудим по телефону
 				</div>
 				<div class="form__main">
 					<form action="post">
@@ -1162,6 +1162,35 @@
 				</svg>
 			</div>
 			<div class="scroll-to-top__text">Наверх</div>
+		</div>
+
+		<div class="popup-overlay" id="popupOverlay">
+			<div class="popup" id="popup" role="dialog" aria-labelledby="popupTitle" aria-modal="true">
+				<div class="popup-title" id="popupTitle">Заказать звонок</div>
+				<button class="popup-close" id="popupClose" aria-label="Закрыть попап">✖</button>
+				<form id="contactForm">
+					<input type="text" name="name" placeholder="Ваше имя:" autocomplete="name" required aria-label="Ваше имя" />
+					<input type="tel" name="phone" placeholder="Телефон:" autocomplete="tel" required aria-label="Телефон" />
+					<textarea name="comment" placeholder="Комментарий:" aria-label="Комментарий"></textarea>
+					<label class="popup-label">
+						<div class="checkbox-wrapper-44">
+							<label class="toggleButton">
+								<input type="checkbox" id="consent" required aria-label="Согласие на обработку данных" />
+								<div>
+									<svg viewBox="0 0 44 44">
+										<path
+											d="M14,24 L21,31 L39.7428882,11.5937758 C35.2809627,1.53125861 30.0333333,4 24,4 C12.95,4 4,12.95 4,24 C4,35.05 12.95,44 24,44 C35.05,44 44,35.05 44,24 C44,19.3 42.5809627,15.1645919 39.7428882,11.5937758"
+											transform="translate(-2.000000, -2.000000)"
+										></path>
+									</svg>
+								</div>
+							</label>
+						</div>
+						<span>Я согласен(а) с обработкой персональных данных</span>
+					</label>
+					<button class="btn" type="submit">Отправить</button>
+				</form>
+			</div>
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
