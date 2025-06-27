@@ -326,17 +326,18 @@
 		transform: translateX(0);
 	}
 	.menu__btn-close {
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		background-color: #6c38cc;
 		border-radius: 50%;
 		width: 40px;
 		height: 40px;
-		padding-top: 3px;
 		margin-left: auto;
 		margin-bottom: 10px;
 	}
 	.menu.active .menu__btn-close {
-		display: block;
+		display: flex;
 	}
 	.menu__list {
 		flex-direction: column;
@@ -394,6 +395,9 @@
 }
 
 @media screen and (max-width: 640px) {
+	.menu__nav {
+		width: 280px;
+	}
 	.footer__logo {
 		font-size: 25px;
 	}
@@ -514,9 +518,59 @@
 	.footer {
 		padding: 60px 0 10px;
 	}
+	.tariffs__item-bottom-btn {
+		padding: 15px 25px;
+	}
+	.tariffs__item-bottom-price {
+		font-size: 28px;
+		margin-bottom: 15px;
+	}
+	.tariffs__item-list {
+		gap: 12px;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+	}
+	.tariffs__item-desc {
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+	}
+	.tariffs__item-desc br {
+		display: none;
+	}
+	.intro__btn {
+		padding: min(5.3125vw, 15px) min(10vw, 26px);
+	}
+	.reviews__list,
+	.portfolio__list,
+	.tariffs__list {
+		padding-bottom: 50px;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		width: 30px;
+		height: 30px;
+	}
+	.features__list {
+		gap: 15px;
+	}
+	.swiper-button-prev {
+		right: 45px;
+	}
+	.container {
+		padding: 0 20px;
+	}
+	.header__logo {
+		font-size: 28px;
+	}
+	.reviews__item-text {
+		margin-bottom: 15px;
+	}
 }
 
 @media screen and (max-width: 576px) {
+	section {
+		padding: 5vw 0;
+	}
 	.intro__services {
 		gap: 8px;
 	}
@@ -530,6 +584,45 @@
 }
 
 @media screen and (max-width: 480px) {
+	.header__logo {
+		font-size: 25px;
+	}
+	.global__messengers {
+		bottom: 20px;
+		right: 15px;
+	}
+	.scroll-to-top {
+		bottom: 20px;
+		left: 15px;
+	}
+	.menu__btn-burger {
+		width: 45px;
+	}
+	.reviews__item-desc {
+		font-size: 14px;
+	}
+	.reviews__item-icon {
+		width: 50px;
+	}
+	.advantage__inner.mp-wrapp,
+	.mp-wrapp {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.menu__btn-close {
+		margin-bottom: 5px;
+		width: 35px;
+		height: 35px;
+	}
+	.menu__nav {
+		width: 230px;
+		padding: 10px 16px 16px;
+		margin: 7px 0;
+	}
+	.menu__link {
+		margin: 5px 0;
+		padding: 10px 8px;
+	}
 	.faq__item-title {
 		padding: 18px 0;
 	}
@@ -558,7 +651,7 @@
 		align-items: flex-start;
 	}
 	.advantage__note-img {
-		width: 138px;
+		width: 110px;
 	}
 	.advantage__note-title {
 		font-size: min(4.0625vw, 18px);
@@ -571,4 +664,10 @@
 }
 
 @media screen and (max-width: 320px) {
+	.advantage__note-img {
+		width: 100px;
+	}
+	.advantage__note-title {
+		padding-bottom: 7px;
+	}
 }

@@ -67,7 +67,7 @@ const swiperTariffs = new Swiper('.swiper--tariffs', {
 	// autoplay: { delay: 5000 },
 
 	breakpoints: {
-		320: {
+		0: {
 			slidesPerView: 1
 		},
 		690: {
@@ -96,7 +96,7 @@ const swiperReviews = new Swiper('.swiper--reviews', {
 	// autoplay: { delay: 4000 },
 
 	breakpoints: {
-		320: {
+		0: {
 			slidesPerView: 1
 		},
 		1120: {
@@ -122,7 +122,7 @@ const swiperPortfolio = new Swiper('.swiper--portfolio', {
 	// autoplay: { delay: 6000 },
 
 	breakpoints: {
-		320: {
+		0: {
 			slidesPerView: 1
 		},
 		992: {
@@ -147,25 +147,31 @@ forms.forEach(form => {
 	form.addEventListener('submit', async e => {
 		e.preventDefault()
 
-		const name = form.querySelector('[name="name"]')
+		const name = form.querySelector('[name="name"]') || { value: '' }
 		const phone = form.querySelector('[name="phone"]')
-		const question = form.querySelector('[name="question"]') || { value: '' }
-		const comment = form.querySelector('[name="comment"]') || { value: '' }
+		const question = form.querySelector('[name="question"]') || form.querySelector('[name="comment"]') || { value: '' }
+		const email = form.querySelector('[name="email"]') || { value: '' }
 		const consent = form.querySelector('[name="consent"]')
 
-		if (!name.value.trim() || !phone.value.trim() || !consent.checked) {
-			alert('Пожалуйста, заполните имя, телефон и дайте согласие.')
+		if (!phone?.value.trim()) {
+			alert('Пожалуйста, заполните телефон.')
+			return
+		}
+
+		if (consent && !consent.checked) {
+			alert('Пожалуйста, дайте согласие на обработку данных.')
 			return
 		}
 
 		const message = `
-			📝 Новая заявка с формы:
-			------------------------------------
-			👤 Имя: ${name.value}
-			📞 Телефон: ${phone.value}
-			❓ Вопрос: ${question.value || comment.value}
-			-----------------------------------
-			🔐 Согласие: ${consent.checked ? '✅' : '❌'}
+💜 Разработка+
+------------------------------------
+👤 Имя: ${name.value}
+📧 Email: ${email.value}
+📞 Телефон: ${phone.value}
+❓ Вопрос: ${question.value}
+-----------------------------------
+🔐 Согласие: ${consent ? (consent.checked ? '✅' : '❌') : 'Нетребуется'}
 		`
 
 		await fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
@@ -213,4 +219,9 @@ document.querySelectorAll('.open-popup').forEach(btn => {
 document.getElementById('popupClose')?.addEventListener('click', closePopup)
 overlay.addEventListener('click', e => {
 	if (e.target === e.currentTarget) closePopup()
+})
+
+// ================= PHONE MASK =================
+document.querySelectorAll('.phone-input').forEach(input => {
+	IMask(input, { mask: '+{7} (000) 000-00-00' })
 })

@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="/css/reset.css" />
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="/css/media.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
 		<title>Создание и разработка сайтов по всей России | Заказать сайт в веб-студии Разработка+</title>
 	</head>
@@ -56,16 +57,7 @@
 					</div>
 
 					<button class="menu__btn-burger" id="burger" title="Кнопка открытия меню">
-						<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="48" height="48" rx="24" fill="#F5F5F5"></rect>
-							<path
-								d="M15.75 24h16.5m-16.5-5.5h16.5m-11 11h11"
-								stroke="#2B2D33"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							></path>
-						</svg>
+						<img src="images/icons/menu-burger.svg" alt="" />
 					</button>
 				</div>
 			</div>
@@ -75,26 +67,18 @@
 			<div class="menu__inner mp-wrapp">
 				<nav class="menu__nav">
 					<button class="menu__btn-close" id="close" title="Кнопка закрытия меню">
-						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M9 9L23 23M23 9L9 23"
-								stroke="white"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							></path>
-						</svg>
+						<img src="./images/icons/close.svg" alt="" />
 					</button>
 					<ul class="menu__list">
-						<li class="menu__item"><a href="#" class="menu__link active">Разработка сайтов</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Портфолио</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Поддержка</a></li>
+						<li class="menu__item"><a href="#home" class="menu__link active">Разработка сайтов</a></li>
+						<li class="menu__item"><a href="#price" class="menu__link">Цены</a></li>
+						<li class="menu__item"><a href="#portfolio" class="menu__link">Портфолио</a></li>
+						<li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
+						<li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+						<li class="menu__item"><a href="#faq" class="menu__link">FAQ</a></li>
+						<li class="menu__item"><a href="#blog" class="menu__link">Блог</a></li>
+						<li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+						<li class="menu__item"><a href="#support" class="menu__link">Поддержка</a></li>
 					</ul>
 				</nav>
 				<button href="" class="menu__btn open-popup">Заказать сайт</button>
@@ -134,7 +118,7 @@
 			</div>
 		</div>
 
-		<section class="tariffs">
+		<section class="tariffs" id="price">
 			<div class="container">
 				<div class="tariffs__title">Цены на разработку сайтов</div>
 				<div class="tariffs__wrapper swiper swiper--tariffs">
@@ -178,7 +162,7 @@
 									10 000 <span>₽</span>
 									<div class="tariffs__item-bottom-price--old">15 000 ₽</div>
 								</div>
-								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
+								<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
 							</div>
 						</div>
 
@@ -221,7 +205,7 @@
 									5 000 <span>₽</span>
 									<div class="tariffs__item-bottom-price--old">8 000 ₽</div>
 								</div>
-								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
+								<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
 							</div>
 						</div>
 
@@ -264,7 +248,7 @@
 									25 000 <span>₽</span>
 									<div class="tariffs__item-bottom-price--old">35 000 ₽</div>
 								</div>
-								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
+								<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
 							</div>
 						</div>
 
@@ -307,7 +291,7 @@
 									10 000 <span>₽</span>
 									<div class="tariffs__item-bottom-price--old">15 000 ₽</div>
 								</div>
-								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
+								<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
 							</div>
 						</div>
 
@@ -350,7 +334,7 @@
 									10 000 <span>₽</span>
 									<div class="tariffs__item-bottom-price--old">14 000 ₽</div>
 								</div>
-								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
+								<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
 							</div>
 						</div>
 
@@ -393,7 +377,7 @@
 									15 000 <span>₽</span>
 									<div class="tariffs__item-bottom-price--old">21 950 ₽</div>
 								</div>
-								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
+								<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
 							</div>
 						</div>
 
@@ -433,7 +417,7 @@
 									30 000 <span>₽</span>
 									<div class="tariffs__item-bottom-price--old">40 000 ₽</div>
 								</div>
-								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
+								<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
 							</div>
 						</div>
 
@@ -476,7 +460,7 @@
 									10 000 <span>₽</span>
 									<div class="tariffs__item-bottom-price--old">15 000 ₽</div>
 								</div>
-								<a class="tariffs__item-bottom-btn" href="#">Подробнее</a>
+								<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
 							</div>
 						</div>
 					</div>
@@ -573,8 +557,8 @@
 		<section class="features">
 			<div class="container">
 				<h3 class="features__title">
-					Чем Разработка+ выделяется среди других: <br />
-					аргументы, которые говорят сами за себя
+					Чем Разработка+ отличается от других:<br />
+					факты, которые говорят сами за себя.
 				</h3>
 
 				<div class="features__list">
@@ -583,7 +567,7 @@
 							<div class="features__item-icon">
 								<img src="./images/icons/coins.svg" alt="" />
 							</div>
-							<div class="features__item-title">💰 Доступные цены</div>
+							<div class="features__item-title">Доступные цены</div>
 						</div>
 						<div class="features__item-text">
 							Мы предлагаем честную стоимость без скрытых доплат. Вы получаете качественный сайт по фиксированной цене,
@@ -596,7 +580,7 @@
 							<div class="features__item-icon">
 								<img src="./images/icons/rocket.svg" alt="" />
 							</div>
-							<div class="features__item-title">⚡ Быстрая разработка</div>
+							<div class="features__item-title">Быстрая разработка</div>
 						</div>
 						<div class="features__item-text">
 							Вы сможете запустить свой проект уже в первый день вашего обращения. Мы работаем по отлаженным процессам и
@@ -609,7 +593,7 @@
 							<div class="features__item-icon">
 								<img src="./images/icons/brain.svg" alt="" />
 							</div>
-							<div class="features__item-title">🧠 Продуманный подход</div>
+							<div class="features__item-title">Продуманный подход</div>
 						</div>
 						<div class="features__item-text">
 							 Каждое решение — осознанное. Мы глубоко погружаемся в задачи вашего бизнеса и разрабатываем сайт, который
@@ -620,7 +604,7 @@
 			</div>
 		</section>
 
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="reviews__content mp-wrapp">
 				<div class="reviews__title">Разработка+ глазами наших клиентов</div>
 
@@ -683,7 +667,7 @@
 			</div>
 		</section>
 
-		<section class="portfolio">
+		<section class="portfolio" id="portfolio">
 			<div class="portfolio__content mp-wrapp">
 				<div class="portfolio__inner">
 					<div class="portfolio__title">Как Разработка+ меняет бизнес</div>
@@ -909,7 +893,7 @@
 			</div>
 		</section>
 
-		<section class="faq">
+		<section class="faq" id="faq">
 			<div class="faq__wrapper">
 				<div class="container">
 					<div class="faq__title">Часто задаваемые вопросы</div>
@@ -1007,12 +991,12 @@
 				<div class="form__main">
 					<form action="post">
 						<div class="form__field">
-							<input placeholder="E-mail:" type="email" name="" id="" />
+							<input placeholder="E-mail:" type="email" name="email" id="email" autocomplete="email" required />
 							<div class="form__field-title">E-mail:</div>
 						</div>
 
 						<div class="form__field">
-							<input placeholder="Телефон:" type="tel" name="" id="" />
+							<input placeholder="Телефон:" class="phone-input" type="tel" name="phone" autocomplete="tel" required />
 							<div class="form__field-title">Телефон: <span>*</span></div>
 						</div>
 
@@ -1086,42 +1070,42 @@
 
 					<div class="footer__main">
 						<div class="footer__main-block">
-							<span class="footer__caption">Создание сайтов</span>
+							<span class="footer__caption">Наши услуги</span>
 							<nav class="footer__nav">
-								<a href="#">Сайт-Визитка</a>
-								<a href="#">Лендинг Пейдж</a>
-								<a href="#">Сайт-Бизнес</a>
-								<a href="#">Адаптивная вёрстка</a>
+								<a href="#">Лендинг</a>
+								<a href="#">Сайт-визитка</a>
+								<a href="#">Интернет-магазин</a>
+								<a href="#">Корпоративный сайт</a>
 							</nav>
 						</div>
 
 						<div class="footer__main-block">
-							<span class="footer__caption">Создание сайтов</span>
+							<span class="footer__caption">Дополнительно</span>
 							<nav class="footer__nav">
-								<a href="#">Сайт-Визитка</a>
-								<a href="#">Лендинг Пейдж</a>
-								<a href="#">Сайт-Бизнес</a>
+								<a href="#">Дизайн сайтов</a>
+								<a href="#">SEO-оптимизация</a>
 								<a href="#">Адаптивная вёрстка</a>
+								<a href="#">Продвижение сайта</a>
 							</nav>
 						</div>
 
 						<div class="footer__main-block">
-							<span class="footer__caption">Создание сайтов</span>
+							<span class="footer__caption">Навигация</span>
 							<nav class="footer__nav">
-								<a href="#">Сайт-Визитка</a>
-								<a href="#">Лендинг Пейдж</a>
-								<a href="#">Сайт-Бизнес</a>
-								<a href="#">Адаптивная вёрстка</a>
+								<a href="#">Цены</a>
+								<a href="#">Портфолио</a>
+								<a href="#">Отзывы</a>
+								<a href="#">Контакты</a>
 							</nav>
 						</div>
 
 						<div class="footer__main-block">
-							<span class="footer__caption">Реквизиты</span>
+							<span class="footer__caption">Контакты</span>
 							<div class="footer__nav">
-								<span>ИП Половников Алексей Васильевич</span>
-								<span>ИНН 665818248750</span>
-								<span>ОГРНИП 319665800023440</span>
-								<a href="mailto:contact@devepmentplus.ru">contact@devepmentplus.ru</a>
+								<span>Екатеринбург</span>
+								<a href="tel:+79530526260">+7 (953) 052-62-60</a>
+								<a href="https://t.me/development_plus">@development_plus</a>
+								<a href="mailto:razrabotka_plus@gmail.com">razrabotka_plus@gmail.com</a>
 							</div>
 						</div>
 					</div>
@@ -1137,29 +1121,22 @@
 
 			<div class="global-messengers__list">
 				<div class="global-messengers__list-inner">
-					<div class="global-messengers__item">
+					<a href="mailto:razrabotka_plus@gmail.com" class="global-messengers__item">
 						<img src="/images/icons/chat.svg" alt="Chat" />
-					</div>
-					<div class="global-messengers__item">
+					</a>
+					<a href="https://t.me/development_plus" class="global-messengers__item">
 						<img src="/images/icons/telegram.svg" alt="Telegram" />
-					</div>
-					<div class="global-messengers__item">
+					</a>
+					<a href="https://wa.me/79530526260" class="global-messengers__item">
 						<img src="/images/icons/whatsapp.svg" alt="Whatsapp" />
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>
 
 		<div class="scroll-to-top">
 			<div class="scroll-to-top__icon">
-				<svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						fill-rule="evenodd"
-						clip-rule="evenodd"
-						d="M13 11.3766L19.2164 17.5622C19.6244 17.9682 20.286 17.9682 20.694 17.5622C21.102 17.1562 21.102 16.4979 20.694 16.0919L13.7388 9.1712C13.3308 8.7652 12.6692 8.7652 12.2612 9.1712L5.30602 16.0919C4.89799 16.4979 4.89799 17.1562 5.30602 17.5622C5.71404 17.9682 6.37559 17.9682 6.78361 17.5622L13 11.3766Z"
-						fill="white"
-					></path>
-				</svg>
+				<img src="images/icons/arrow-top.svg" alt="" />
 			</div>
 			<div class="scroll-to-top__text">Наверх</div>
 		</div>
@@ -1170,29 +1147,34 @@
 				<button class="popup-close" id="popupClose" aria-label="Закрыть попап">✖</button>
 				<form id="contactForm">
 					<input type="text" name="name" placeholder="Ваше имя:" autocomplete="name" required aria-label="Ваше имя" />
-					<input type="tel" name="phone" placeholder="Телефон:" autocomplete="tel" required aria-label="Телефон" />
-					<textarea name="comment" placeholder="Комментарий:" aria-label="Комментарий"></textarea>
+
+					<input
+						class="phone-input"
+						type="tel"
+						name="phone"
+						placeholder="Телефон:"
+						autocomplete="tel"
+						required
+						aria-label="Телефон"
+					/>
+
+					<textarea name="question" placeholder="Ваш вопрос:" aria-label="Ваш вопрос"></textarea>
+
 					<label class="popup-label">
 						<div class="checkbox-wrapper-44">
 							<label class="toggleButton">
-								<input type="checkbox" id="consent" required aria-label="Согласие на обработку данных" />
-								<div>
-									<svg viewBox="0 0 44 44">
-										<path
-											d="M14,24 L21,31 L39.7428882,11.5937758 C35.2809627,1.53125861 30.0333333,4 24,4 C12.95,4 4,12.95 4,24 C4,35.05 12.95,44 24,44 C35.05,44 44,35.05 44,24 C44,19.3 42.5809627,15.1645919 39.7428882,11.5937758"
-											transform="translate(-2.000000, -2.000000)"
-										></path>
-									</svg>
-								</div>
+								<input type="checkbox" name="consent" required aria-label="Согласие на обработку данных" />
 							</label>
 						</div>
 						<span>Я согласен(а) с обработкой персональных данных</span>
 					</label>
+
 					<button class="btn" type="submit">Отправить</button>
 				</form>
 			</div>
 		</div>
 
+		<script src="https://unpkg.com/imask"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 		<script type="module" src="/scripts/script.js"></script>
