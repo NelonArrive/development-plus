@@ -3,7 +3,7 @@ import { TELEGRAM_TOKEN, TELEGRAM_CHAT_ID } from './config.js'
 // Accordion
 const accordion = document.querySelector('.faq__item-title')
 
-for (let i = 0; i < accordion.length; i++) {
+for (let i = 0; i < accordion?.length; i++) {
 	accordion[i].addEventListener('click', () => {
 		this.classList.toggle('active')
 	})
@@ -47,11 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Global Messages
 document.addEventListener('DOMContentLoaded', () => {
-	const messengers = document.querySelector('.global__messengers')
 	const btn = document.querySelector('.global__messengers-btn')
 	const list = document.querySelector('.global-messengers__list')
 
-	btn.addEventListener('click', () => {
+	btn?.addEventListener('click', () => {
 		btn.classList.toggle('active')
 		list.classList.toggle('active')
 	})

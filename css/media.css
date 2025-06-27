@@ -257,6 +257,10 @@
 }
 
 @media screen and (max-width: 992px) {
+	.title {
+		font-size: 24px;
+		margin-bottom: 32px;
+	}
 	.features__title br,
 	.advantage__title br {
 		display: none;
@@ -395,6 +399,38 @@
 }
 
 @media screen and (max-width: 640px) {
+	.popup {
+		padding: 20px;
+		width: 95%;
+	}
+
+	.popup-title {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.popup input,
+	.popup textarea {
+		padding: 12px 15px;
+		font-size: 14px;
+	}
+
+	.btn {
+		width: 100%;
+		padding: 12px;
+	}
+
+	.popup-close {
+		width: 35px;
+		height: 35px;
+		font-size: 18px;
+		right: 5px;
+		top: 5px;
+	}
+	.title {
+		font-size: 18px;
+		margin-bottom: 16px;
+	}
 	.menu__nav {
 		width: 280px;
 	}
@@ -584,6 +620,9 @@
 }
 
 @media screen and (max-width: 480px) {
+	.title {
+		font-size: 28px;
+	}
 	.header__logo {
 		font-size: 25px;
 	}
