@@ -1,5 +1,16 @@
 import { TELEGRAM_TOKEN, TELEGRAM_CHAT_ID } from './config.js'
 
+// Smooth scrolling
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+
+ScrollSmoother.create({
+	wrapper: '.wrapper',
+	content: '.content',
+	smooth: 1.3,
+	smoothTouch: 0.1,
+	effects: true
+})
+
 // Accordion
 const accordion = document.querySelector('.faq__item-title')
 
