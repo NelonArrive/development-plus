@@ -15,1210 +15,1229 @@
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="/css/media.css" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="content">
-				<header class="header">
-					<div class="header__row mp-wrapp">
-						<a href="/" class="header__logo">
-							<h1>Разработка+</h1>
-						</a>
+			<header class="header" data-aos="fade-down" data-aos-duration="800">
+				<div class="header__row mp-wrapp">
+					<a href="/" class="header__logo" data-aos="fade-right" data-aos-duration="1000">
+						<h1>Разработка+</h1>
+					</a>
 
-						<div class="header__contacts">
-							<div class="header__contacts-list">
-								<div class="header__contacts-item">
-									<div class="header__contacts-icon">
-										<i data-lucide="map-pin"></i>
-									</div>
-									<div class="header__contacts-info">
-										<div class="header__contacts-title">Местоположение:</div>
-										<div class="header__contacts-text">Екатеринбург</div>
+					<div class="header__contacts" data-aos="fade-left" data-aos-duration="1000">
+						<div class="header__contacts-list">
+							<div class="header__contacts-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+								<div class="header__contacts-icon">
+									<i data-lucide="map-pin"></i>
+								</div>
+								<div class="header__contacts-info">
+									<div class="header__contacts-title">Местоположение:</div>
+									<div class="header__contacts-text">Екатеринбург</div>
+								</div>
+							</div>
+
+							<div class="header__contacts-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+								<div class="header__contacts-icon">
+									<i data-lucide="phone-incoming"></i>
+								</div>
+								<div class="header__contacts-info">
+									<div class="header__contacts-title">Телефон:</div>
+									<div class="header__contacts-text"><a href="tel:+79530526260">+7 (953) 052-62-60</a></div>
+								</div>
+							</div>
+
+							<div class="header__contacts-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+								<div class="header__contacts-icon">
+									<i data-lucide="send"></i>
+								</div>
+								<div class="header__contacts-info">
+									<div class="header__contacts-title">Телеграм:</div>
+									<div class="header__contacts-text">
+										<a href="http://t.me/devepment_plus" target="_blank" rel="noopener noreferrer">@development_plus</a>
 									</div>
 								</div>
+							</div>
 
-								<div class="header__contacts-item">
-									<div class="header__contacts-icon">
-										<i data-lucide="phone-incoming"></i>
+							<div class="menu__btn open-popup" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
+								Заказать сайт
+							</div>
+						</div>
+
+						<button
+							class="menu__btn-burger"
+							id="burger"
+							title="Кнопка открытия меню"
+							data-aos="fade-left"
+							data-aos-delay="500"
+							data-aos-duration="800"
+						>
+							<img src="images/icons/menu-burger.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<div class="menu" id="menu" data-aos="fade-right" data-aos-duration="1000">
+				<div class="menu__inner mp-wrapp">
+					<nav class="menu__nav">
+						<button
+							class="menu__btn-close"
+							id="close"
+							title="Кнопка закрытия меню"
+							data-aos="fade-down"
+							data-aos-delay="100"
+							data-aos-duration="800"
+						>
+							<img src="./images/icons/close.svg" alt="" />
+						</button>
+						<ul class="menu__list">
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+								<a href="#home" class="menu__link active">Разработка сайтов</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+								<a href="#price" class="menu__link">Цены</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+								<a href="#portfolio" class="menu__link">Портфолио</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
+								<a href="#reviews" class="menu__link">Отзывы</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+								<a href="#about" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
+								<a href="#faq" class="menu__link">FAQ</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+								<a href="#blog" class="menu__link">Блог</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="900" data-aos-duration="800">
+								<a href="#contacts" class="menu__link">Контакты</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800">
+								<a href="#support" class="menu__link">Поддержка</a>
+							</li>
+						</ul>
+					</nav>
+					<button href="" class="menu__btn open-popup" data-aos="zoom-in" data-aos-delay="1100" data-aos-duration="800">
+						Заказать сайт
+					</button>
+				</div>
+			</div>
+
+			<div class="intro" data-aos="fade-up">
+				<div class="intro-circle" data-aos="zoom-in" data-aos-delay="200"></div>
+				<div class="intro-circle two" data-aos="zoom-in" data-aos-delay="400"></div>
+
+				<div class="intro__inner mp-wrapp">
+					<div class="intro__left" data-aos="fade-right" data-aos-delay="600">
+						<div class="intro__services">
+							<div class="intro__services-item" data-aos="fade-up" data-aos-delay="700">Лендинг</div>
+							<div class="intro__services-item" data-aos="fade-up" data-aos-delay="800">Сайт-визитка</div>
+							<div class="intro__services-item" data-aos="fade-up" data-aos-delay="900">Интернет-магазина</div>
+							<div class="intro__services-item" data-aos="fade-up" data-aos-delay="1000">Дизайн</div>
+							<div class="intro__services-item" data-aos="fade-up" data-aos-delay="1100">SEO</div>
+						</div>
+
+						<h2 class="intro__title" data-aos="fade-right" data-aos-delay="1200">
+							<span
+								>Ваш бизнес <br />
+								в онлайне уже</span
+							>
+							сегодня
+						</h2>
+
+						<div class="intro__desc" data-aos="fade-right" data-aos-delay="1400">
+							Запустите сайт и получите в подарок пакет<br />
+							инструментов для его развития
+						</div>
+
+						<div class="intro__btn open-popup" data-speed="auto" data-aos="fade-up" data-aos-delay="1600">
+							Начать прямо сейчас
+						</div>
+					</div>
+
+					<div class="intro__right" data-aos="fade-left" data-aos-delay="1800">
+						<div class="intro__right-title">От идеи до истории успеха</div>
+						<img src="/images/background.png" alt="Иллюстрация" data-aos="zoom-in" data-aos-delay="2200" />
+					</div>
+				</div>
+			</div>
+
+			<section class="tariffs" id="price">
+    <div class="container">
+        <div class="tariffs__title">Цены на разработку сайтов</div>
+        <div class="tariffs__wrapper swiper swiper--tariffs">
+            <div class="tariffs__list swiper-wrapper">
+                <div class="tariffs__item swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="tariffs__item-top">
+                        <div class="tariffs__item-title">Сайт-визитка</div>
+                        <div class="tariffs__item-desc">
+                            Простой сайт <br />
+                            за 2 дня
+                        </div>
+                        <ul class="tariffs__item-list">
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="card-sim"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Базовый дизайн</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="panels-top-left"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">До 3 страниц</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="table-of-contents"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Наполнение контентом</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="message-square-text"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Поддержка 1 месяц</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tariffs__item-bottom">
+                        <div class="tariffs__item-bottom-price">
+                            10 000 <span>₽</span>
+                            <div class="tariffs__item-bottom-price--old">15 000 ₽</div>
+                        </div>
+                        <button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="tariffs__item swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="tariffs__item-top">
+                        <div class="tariffs__item-title">Адаптивная вёрстка</div>
+                        <div class="tariffs__item-desc">
+                            По готовому дизайну <br />
+                            за 3 дня
+                        </div>
+                        <ul class="tariffs__item-list">
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="monitor-smartphone"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Адаптация под все устройства</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="code"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Чистый код</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="gauge"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Оптимизация загрузки</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="test-tube-diagonal"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Кроссбраузерное тестирование</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tariffs__item-bottom">
+                        <div class="tariffs__item-bottom-price">
+                            5 000 <span>₽</span>
+                            <div class="tariffs__item-bottom-price--old">8 000 ₽</div>
+                        </div>
+                        <button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="tariffs__item swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="tariffs__item-top">
+                        <div class="tariffs__item-title">Корпоративный сайт</div>
+                        <div class="tariffs__item-desc">
+                            Многостраничный сайт <br />
+                            за 7 дней
+                        </div>
+                        <ul class="tariffs__item-list">
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="figma"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Индивидуальный дизайн</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="layers"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">До 10 страниц</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="target"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Базовая SEO-оптимизация</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="headset"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Техническая поддержка 1 месяц</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tariffs__item-bottom">
+                        <div class="tariffs__item-bottom-price">
+                            25 000 <span>₽</span>
+                            <div class="tariffs__item-bottom-price--old">35 000 ₽</div>
+                        </div>
+                        <button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="tariffs__item swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="tariffs__item-top">
+                        <div class="tariffs__item-title">Продвижение сайта</div>
+                        <div class="tariffs__item-desc">
+                            Увеличение трафика <br />
+                            за 30 дней
+                        </div>
+                        <ul class="tariffs__item-list">
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="arrow-down-up"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Анализ конкурентов</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="keyboard"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Подбор ключевых слов</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="shield-plus"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Настройка рекламы</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="clipboard-minus"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Ежемесячный отчет</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tariffs__item-bottom">
+                        <div class="tariffs__item-bottom-price">
+                            10 000 <span>₽</span>
+                            <div class="tariffs__item-bottom-price--old">15 000 ₽</div>
+                        </div>
+                        <button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="tariffs__item swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                    <div class="tariffs__item-top">
+                        <div class="tariffs__item-title">Дизайн сайтов</div>
+                        <div class="tariffs__item-desc">
+                            Уникальный дизайн <br />
+                            за 5 дней
+                        </div>
+                        <ul class="tariffs__item-list">
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="component"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Прототипирование</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="puzzle"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">UI/UX дизайн</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="codesandbox"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Фирменный стиль</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="file-stack"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">2 правки бесплатно</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tariffs__item-bottom">
+                        <div class="tariffs__item-bottom-price">
+                            10 000 <span>₽</span>
+                            <div class="tariffs__item-bottom-price--old">14 000 ₽</div>
+                        </div>
+                        <button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="tariffs__item swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <div class="tariffs__item-top">
+                        <div class="tariffs__item-title">Лендинг страница</div>
+                        <div class="tariffs__item-desc">
+                            Одностраничный сайт <br />
+                            за 3 дня
+                        </div>
+                        <ul class="tariffs__item-list">
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="hammer"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Конструктор продающей страницы</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="blocks"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Более 80 видов блоков</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="command"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Бесплатное наполнение</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="arrow-big-up-dash"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Управление контекстной рекламой</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tariffs__item-bottom">
+                        <div class="tariffs__item-bottom-price">
+                            15 000 <span>₽</span>
+                            <div class="tariffs__item-bottom-price--old">21 950 ₽</div>
+                        </div>
+                        <button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="tariffs__item swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+                    <div class="tariffs__item-top">
+                        <div class="tariffs__item-title">Интернет-магазин</div>
+                        <div class="tariffs__item-desc">Полнофункциональный магазин за 14 дней</div>
+                        <ul class="tariffs__item-list">
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="shopping-cart"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Каталог товаров</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="nfc"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Интеграция платежных систем</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="truck"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Настройка доставки</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="shield-user"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Админ-панель для управления</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tariffs__item-bottom">
+                        <div class="tariffs__item-bottom-price">
+                            30 000 <span>₽</span>
+                            <div class="tariffs__item-bottom-price--old">40 000 ₽</div>
+                        </div>
+                        <button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="tariffs__item swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                    <div class="tariffs__item-top">
+                        <div class="tariffs__item-title">SEO-оптимизация</div>
+                        <div class="tariffs__item-desc">
+                            Повышение позиций в поиске <br />
+                            за 30 дней
+                        </div>
+                        <ul class="tariffs__item-list">
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="crosshair"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Аудит сайта</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="letter-text"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Оптимизация ключевых слов</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="text-search"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Контент-стратегия</div>
+                            </li>
+                            <li class="tariffs__item-elem">
+                                <div class="tariffs__item-elem-icon">
+                                    <i data-lucide="file-audio"></i>
+                                </div>
+                                <div class="tariffs__item-elem-title">Аналитика и отчеты</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tariffs__item-bottom">
+                        <div class="tariffs__item-bottom-price">
+                            10 000 <span>₽</span>
+                            <div class="tariffs__item-bottom-price--old">15 000 ₽</div>
+                        </div>
+                        <button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+			<section class="advantage">
+				<div class="advantage__inner mp-wrapp">
+					<div class="advantage__title">
+						Случалось ли вам работать с<br />
+						разработчиками, которые:
+					</div>
+
+					<div class="advantage__main">
+						<div class="advantage__left">
+							<div class="advantage__list">
+								<div class="advantage__item">
+									<div class="advantage__item-icon">
+										<i data-lucide="ban"></i>
 									</div>
-									<div class="header__contacts-info">
-										<div class="header__contacts-title">Телефон:</div>
-										<div class="header__contacts-text"><a href="tel:+79530526260">+7 (953) 052-62-60</a></div>
-									</div>
+									<div class="advantage__item-title">Меняют условия и стоимость в процессе без предупреждения?</div>
 								</div>
 
-								<div class="header__contacts-item">
-									<div class="header__contacts-icon">
-										<i data-lucide="send"></i>
+								<div class="advantage__item">
+									<div class="advantage__item-icon">
+										<i data-lucide="ban"></i>
 									</div>
-									<div class="header__contacts-info">
-										<div class="header__contacts-title">Телеграм:</div>
-										<div class="header__contacts-text">
-											<a href="http://t.me/devepment_plus" target="_blank" rel="noopener noreferrer"
-												>@development_plus</a
-											>
+									<div class="advantage__item-title">Обещают быстро, а тянут неделями?</div>
+								</div>
+
+								<div class="advantage__item">
+									<div class="advantage__item-icon">
+										<i data-lucide="ban"></i>
+									</div>
+									<div class="advantage__item-title">Исчезают сразу после запуска проекта?</div>
+								</div>
+
+								<div class="advantage__item">
+									<div class="advantage__item-icon">
+										<i data-lucide="ban"></i>
+									</div>
+									<div class="advantage__item-title">Завышают цену, не давая ценности?</div>
+								</div>
+
+								<div class="advantage__item">
+									<div class="advantage__item-icon">
+										<i data-lucide="ban"></i>
+									</div>
+									<div class="advantage__item-title">Путают простое с «инновационным решением»?</div>
+								</div>
+
+								<div class="advantage__item">
+									<div class="advantage__item-icon">
+										<i data-lucide="ban"></i>
+									</div>
+									<div class="advantage__item-title">Делают сайт, будто застряли в 2012 году?</div>
+								</div>
+							</div>
+							<div class="advantage__note">
+								<div class="advantage__note-img">
+									<img src="./images/advantages-3.png" alt="" />
+								</div>
+								<div class="advantage__note-title">
+									Создавая сайт для вас, Разработка+ относится к нему как к своему: с полной отдачей, вниманием к
+									деталям и заботой о результате.
+								</div>
+							</div>
+						</div>
+						<div class="advantage__right">
+							<img class="advantage__right-people" src="./images/advantages-1.png" alt="человек не довольный, вектор" />
+							<div class="brows">
+								<img src="./images/icons/eyebrow-left.png" alt="eyebrow left" />
+								<img src="./images/icons/eyebrow-right.png" alt="eyebrow right" />
+							</div>
+							<div class="eyes">
+								<div class="eye__left">
+									<img src="./images/icons/eye.png" alt="eye left" />
+								</div>
+								<div class="eye__right">
+									<img src="./images/icons/eye.png" alt="eye right" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="features">
+				<div class="container">
+					<h3 class="features__title">
+						Чем Разработка+ отличается от других:<br />
+						факты, которые говорят сами за себя.
+					</h3>
+
+					<div class="features__list">
+						<div class="features__item">
+							<div class="features__item-top">
+								<div class="features__item-icon">
+									<img src="./images/icons/coins.svg" alt="" />
+								</div>
+								<div class="features__item-title">Доступные цены</div>
+							</div>
+							<div class="features__item-text">
+								Мы предлагаем честную стоимость без скрытых доплат. Вы получаете качественный сайт по фиксированной
+								цене, с прозрачным расчётом и без лишних переплат.
+							</div>
+						</div>
+
+						<div class="features__item">
+							<div class="features__item-top">
+								<div class="features__item-icon">
+									<img src="./images/icons/rocket.svg" alt="" />
+								</div>
+								<div class="features__item-title">Быстрая разработка</div>
+							</div>
+							<div class="features__item-text">
+								Вы сможете запустить свой проект уже в первый день вашего обращения. Мы работаем по отлаженным процессам
+								и не тратим время впустую.
+							</div>
+						</div>
+
+						<div class="features__item">
+							<div class="features__item-top">
+								<div class="features__item-icon">
+									<img src="./images/icons/brain.svg" alt="" />
+								</div>
+								<div class="features__item-title">Продуманный подход</div>
+							</div>
+							<div class="features__item-text">
+								 Каждое решение — осознанное. Мы глубоко погружаемся в задачи вашего бизнеса и разрабатываем сайт,
+								который работает на результат.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews" id="reviews">
+				<div class="reviews__content mp-wrapp">
+					<div class="reviews__title">Разработка+ глазами наших клиентов</div>
+
+					<div class="reviews__wrapper swiper swiper--reviews">
+						<div class="reviews__list swiper-wrapper">
+							<div class="reviews__item swiper-slide">
+								<div class="reviews__item-text">
+									До этого делал сайт на другой платформе, но там только магазины и урезанный функционал. Познакомился с
+									и с тех пор запустил уже 20 сайтов на их платформе. Хотел сказать о их движке, огромный выбор
+									шаблонов,...
+								</div>
+								<div class="reviews__item-bottom">
+									<div class="reviews__item-icon">
+										<img src="./images/icons/reviews.svg" alt="" />
+									</div>
+									<div class="reviews__item-wrap">
+										<div class="reviews__item-title">Дмитрий</div>
+										<div class="reviews__item-desc">владелец интернет-магазина</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="reviews__item swiper-slide">
+								<div class="reviews__item-text">
+									До этого делал сайт на другой платформе, но там только магазины и урезанный функционал. Познакомился с
+									и с тех пор запустил уже 20 сайтов на их платформе. Хотел сказать о их движке, огромный выбор
+									шаблонов,...
+								</div>
+								<div class="reviews__item-bottom">
+									<div class="reviews__item-icon">
+										<img src="./images/icons/reviews.svg" alt="" />
+									</div>
+									<div class="reviews__item-wrap">
+										<div class="reviews__item-title">Дмитрий</div>
+										<div class="reviews__item-desc">владелец интернет-магазина</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="reviews__item swiper-slide">
+								<div class="reviews__item-text">
+									До этого делал сайт на другой платформе, но там только магазины и урезанный функционал. Познакомился с
+									и с тех пор запустил уже 20 сайтов на их платформе. Хотел сказать о их движке, огромный выбор
+									шаблонов,...
+								</div>
+								<div class="reviews__item-bottom">
+									<div class="reviews__item-icon">
+										<img src="./images/icons/reviews.svg" alt="" />
+									</div>
+									<div class="reviews__item-wrap">
+										<div class="reviews__item-title">Дмитрий</div>
+										<div class="reviews__item-desc">владелец интернет-магазина</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="portfolio" id="portfolio">
+				<div class="portfolio__content mp-wrapp">
+					<div class="portfolio__inner">
+						<div class="portfolio__title">Как Разработка+ меняет бизнес</div>
+						<div class="portfolio__desc">
+							Более 9 000 бизнесов вышли в онлайн с нашей помощью — мы не просто создаём сайты, а сопровождаем каждый
+							проект от идеи до первых клиентов, помогая выстроить эффективное присутствие в интернете и расти дальше.
+						</div>
+					</div>
+
+					<div class="swiper swiper--portfolio">
+						<div class="portfolio__list swiper-wrapper">
+							<div class="portfolio__item swiper-slide">
+								<div class="portfolio__item-top">
+									<div class="portfolio__item-left">
+										<div class="portfolio__item-img">
+											<img src="/images/example.webp" alt="Пример проекта" />
+										</div>
+										<div class="portfolio__item-img-text">
+											<span>Агентства</span>
 										</div>
 									</div>
+									<div class="portfolio__item-right">
+										<div class="portfolio__item-title">
+											<div class="portfolio__item-title-text">Название проекта</div>
+											<div class="portfolio__item-title-icon">
+												<img src="./images/portfolio-icon.png" alt="" />
+											</div>
+										</div>
+										<ul class="portfolio__item-services-list">
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>Адаптивная верстка</span>
+											</li>
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>Интеграция с CRM</span>
+											</li>
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>SEO-оптимизация</span>
+											</li>
+										</ul>
+									</div>
 								</div>
 
-								<div class="menu__btn open-popup">Заказать сайт</div>
+								<div class="portfolio__item-bottom">
+									<p>
+										Редизайн и комплексная оптимизация сайта психологических услуг с улучшением интерфейса,
+										адаптивности.
+									</p>
+								</div>
 							</div>
 
-							<button class="menu__btn-burger" id="burger" title="Кнопка открытия меню">
-								<img src="images/icons/menu-burger.svg" alt="" />
-							</button>
-						</div>
-					</div>
-				</header>
+							<div class="portfolio__item swiper-slide">
+								<div class="portfolio__item-top">
+									<div class="portfolio__item-left">
+										<div class="portfolio__item-img">
+											<img src="/images/example.webp" alt="Пример проекта" />
+										</div>
+										<div class="portfolio__item-img-text">
+											<span>Агентства</span>
+										</div>
+									</div>
+									<div class="portfolio__item-right">
+										<div class="portfolio__item-title">
+											<div class="portfolio__item-title-text">Название проекта</div>
+											<div class="portfolio__item-title-icon">
+												<img src="./images/portfolio-icon.png" alt="" />
+											</div>
+										</div>
+										<ul class="portfolio__item-services-list">
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>Адаптивная верстка</span>
+											</li>
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>Интеграция с CRM</span>
+											</li>
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>SEO-оптимизация</span>
+											</li>
+										</ul>
+									</div>
+								</div>
 
-				<div class="menu" id="menu">
-					<div class="menu__inner mp-wrapp">
-						<nav class="menu__nav">
-							<button class="menu__btn-close" id="close" title="Кнопка закрытия меню">
-								<img src="./images/icons/close.svg" alt="" />
-							</button>
-							<ul class="menu__list">
-								<li class="menu__item"><a href="#home" class="menu__link active">Разработка сайтов</a></li>
-								<li class="menu__item"><a href="#price" class="menu__link">Цены</a></li>
-								<li class="menu__item"><a href="#portfolio" class="menu__link">Портфолио</a></li>
-								<li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
-								<li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
-								<li class="menu__item"><a href="#faq" class="menu__link">FAQ</a></li>
-								<li class="menu__item"><a href="#blog" class="menu__link">Блог</a></li>
-								<li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
-								<li class="menu__item"><a href="#support" class="menu__link">Поддержка</a></li>
-							</ul>
-						</nav>
-						<button href="" class="menu__btn open-popup">Заказать сайт</button>
+								<div class="portfolio__item-bottom">
+									<p>
+										Редизайн и комплексная оптимизация сайта психологических услуг с улучшением интерфейса,
+										адаптивности.
+									</p>
+								</div>
+							</div>
+
+							<div class="portfolio__item swiper-slide">
+								<div class="portfolio__item-top">
+									<div class="portfolio__item-left">
+										<div class="portfolio__item-img">
+											<img src="/images/example.webp" alt="Пример проекта" />
+										</div>
+										<div class="portfolio__item-img-text">
+											<span>Агентства</span>
+										</div>
+									</div>
+									<div class="portfolio__item-right">
+										<div class="portfolio__item-title">
+											<div class="portfolio__item-title-text">Название проекта</div>
+											<div class="portfolio__item-title-icon">
+												<img src="./images/portfolio-icon.png" alt="" />
+											</div>
+										</div>
+										<ul class="portfolio__item-services-list">
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>Адаптивная верстка</span>
+											</li>
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>Интеграция с CRM</span>
+											</li>
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>SEO-оптимизация</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="portfolio__item-bottom">
+									<p>
+										Редизайн и комплексная оптимизация сайта психологических услуг с улучшением интерфейса,
+										адаптивности.
+									</p>
+								</div>
+							</div>
+
+							<div class="portfolio__item swiper-slide">
+								<div class="portfolio__item-top">
+									<div class="portfolio__item-left">
+										<div class="portfolio__item-img">
+											<img src="/images/example.webp" alt="Пример проекта" />
+										</div>
+										<div class="portfolio__item-img-text">
+											<span>Агентства</span>
+										</div>
+									</div>
+									<div class="portfolio__item-right">
+										<div class="portfolio__item-title">
+											<div class="portfolio__item-title-text">Название проекта</div>
+											<div class="portfolio__item-title-icon">
+												<img src="./images/portfolio-icon.png" alt="" />
+											</div>
+										</div>
+										<ul class="portfolio__item-services-list">
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>Адаптивная верстка</span>
+											</li>
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>Интеграция с CRM</span>
+											</li>
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>SEO-оптимизация</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="portfolio__item-bottom">
+									<p>
+										Редизайн и комплексная оптимизация сайта психологических услуг с улучшением интерфейса,
+										адаптивности.
+									</p>
+								</div>
+							</div>
+
+							<div class="portfolio__item swiper-slide">
+								<div class="portfolio__item-top">
+									<div class="portfolio__item-left">
+										<div class="portfolio__item-img">
+											<img src="/images/example.webp" alt="Пример проекта" />
+										</div>
+										<div class="portfolio__item-img-text">
+											<span>Агентства</span>
+										</div>
+									</div>
+									<div class="portfolio__item-right">
+										<div class="portfolio__item-title">
+											<div class="portfolio__item-title-text">Название проекта</div>
+											<div class="portfolio__item-title-icon">
+												<img src="./images/portfolio-icon.png" alt="" />
+											</div>
+										</div>
+										<ul class="portfolio__item-services-list">
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>Адаптивная верстка</span>
+											</li>
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>Интеграция с CRM</span>
+											</li>
+											<li class="portfolio__item-services-item">
+												<div class="portfolio__item-services-icon"></div>
+												<span>SEO-оптимизация</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="portfolio__item-bottom">
+									<p>
+										Редизайн и комплексная оптимизация сайта психологических услуг с улучшением интерфейса,
+										адаптивности.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+
+						<div class="swiper-pagination"></div>
 					</div>
 				</div>
+			</section>
 
-				<div class="intro">
-					<div class="intro-circle"></div>
-					<div class="intro-circle two"></div>
-					<div class="intro__inner mp-wrapp">
-						<div class="intro__left">
-							<div class="intro__services">
-								<div class="intro__services-item">Лендинг</div>
-								<div class="intro__services-item">Сайт-визитка</div>
-								<div class="intro__services-item">Интернет-магазина</div>
-								<div class="intro__services-item">Дизайн</div>
-								<div class="intro__services-item">SEO</div>
-							</div>
-							<h2 class="intro__title">
-								<span>
-									Ваш бизнес <br />
-									в онлайне уже
-								</span>
-								сегодня
-							</h2>
-							<div class="intro__desc">
-								Запустите сайт и получите в подарок пакет<br />
-								инструментов для его развития
-							</div>
-							<div class="intro__btn open-popup">Начать прямо сейчас</div>
-						</div>
-
-						<div class="intro__right">
-							<div class="intro__right-title">От идеи до истории успеха</div>
-							<img src="/images/background.png" alt="Иллюстрация" />
-						</div>
-					</div>
-				</div>
-
-				<section class="tariffs" id="price">
+			<section class="faq" id="faq">
+				<div class="faq__wrapper">
 					<div class="container">
-						<div class="tariffs__title">Цены на разработку сайтов</div>
-						<div class="tariffs__wrapper swiper swiper--tariffs">
-							<div class="tariffs__list swiper-wrapper">
-								<div class="tariffs__item swiper-slide">
-									<div class="tariffs__item-top">
-										<div class="tariffs__item-title">Сайт-визитка</div>
-										<div class="tariffs__item-desc">
-											Простой сайт <br />
-											за 2 дня
-										</div>
-										<ul class="tariffs__item-list">
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="card-sim"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Базовый дизайн</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="panels-top-left"></i>
-												</div>
-												<div class="tariffs__item-elem-title">До 3 страниц</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="table-of-contents"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Наполнение контентом</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="message-square-text"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Поддержка 1 месяц</div>
-											</li>
-										</ul>
-									</div>
-									<div class="tariffs__item-bottom">
-										<div class="tariffs__item-bottom-price">
-											10 000 <span>₽</span>
-											<div class="tariffs__item-bottom-price--old">15 000 ₽</div>
-										</div>
-										<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
+						<div class="faq__title">Часто задаваемые вопросы</div>
+						<div class="faq__list">
+							<div class="faq__item">
+								<div class="faq__item-title">
+									<div class="faq__item-title_text">Как быстро создадите сайт?</div>
+									<div class="faq__item-title_icon"></div>
+								</div>
+								<div class="faq__item-body">
+									<div class="faq__item-body-inner">
+										Сроки зависят от сложности проекта. Простой сайт — от 7 дней, сложный — от 2 недель.
 									</div>
 								</div>
+							</div>
+							<div class="faq__item">
+								<div class="faq__item-title">
+									<div class="faq__item-title_text">Сколько стоит разработка сайта?</div>
+									<div class="faq__item-title_icon"></div>
+								</div>
+								<div class="faq__item-body">
+									<div class="faq__item-body-inner">Цена начинается от $500 для лендинга и зависит от функционала.</div>
+								</div>
+							</div>
 
-								<div class="tariffs__item swiper-slide">
-									<div class="tariffs__item-top">
-										<div class="tariffs__item-title">Адаптивная вёрстка</div>
-										<div class="tariffs__item-desc">
-											По готовому дизайну <br />
-											за 3 дня
-										</div>
-										<ul class="tariffs__item-list">
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="monitor-smartphone"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Адаптация под все устройства</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="code"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Чистый код</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="gauge"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Оптимизация загрузки</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="test-tube-diagonal"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Кроссбраузерное тестирование</div>
-											</li>
-										</ul>
-									</div>
-									<div class="tariffs__item-bottom">
-										<div class="tariffs__item-bottom-price">
-											5 000 <span>₽</span>
-											<div class="tariffs__item-bottom-price--old">8 000 ₽</div>
-										</div>
-										<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
+							<div class="faq__item">
+								<div class="faq__item-title">
+									<div class="faq__item-title_text">Сайт будет адаптивным?</div>
+									<div class="faq__item-title_icon"></div>
+								</div>
+								<div class="faq__item-body">
+									<div class="faq__item-body-inner">
+										Все наши сайты адаптированы для мобильных устройств и планшетов.
 									</div>
 								</div>
-
-								<div class="tariffs__item swiper-slide">
-									<div class="tariffs__item-top">
-										<div class="tariffs__item-title">Корпоративный сайт</div>
-										<div class="tariffs__item-desc">
-											Многостраничный сайт <br />
-											за 7 дней
-										</div>
-										<ul class="tariffs__item-list">
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="figma"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Индивидуальный дизайн</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="layers"></i>
-												</div>
-												<div class="tariffs__item-elem-title">До 10 страниц</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="target"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Базовая SEO-оптимизация</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="headset"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Техническая поддержка 1 месяц</div>
-											</li>
-										</ul>
-									</div>
-									<div class="tariffs__item-bottom">
-										<div class="tariffs__item-bottom-price">
-											25 000 <span>₽</span>
-											<div class="tariffs__item-bottom-price--old">35 000 ₽</div>
-										</div>
-										<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
-									</div>
+							</div>
+							<div class="faq__item">
+								<div class="faq__item-title">
+									<div class="faq__item-title_text">Предоставляете ли вы хостинг?</div>
+									<div class="faq__item-title_icon"></div>
 								</div>
-
-								<div class="tariffs__item swiper-slide">
-									<div class="tariffs__item-top">
-										<div class="tariffs__item-title">Продвижение сайта</div>
-										<div class="tariffs__item-desc">
-											Увеличение трафика <br />
-											за 30 дней
-										</div>
-										<ul class="tariffs__item-list">
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="arrow-down-up"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Анализ конкурентов</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="keyboard"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Подбор ключевых слов</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="shield-plus"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Настройка рекламы</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="clipboard-minus"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Ежемесячный отчет</div>
-											</li>
-										</ul>
-									</div>
-									<div class="tariffs__item-bottom">
-										<div class="tariffs__item-bottom-price">
-											10 000 <span>₽</span>
-											<div class="tariffs__item-bottom-price--old">15 000 ₽</div>
-										</div>
-										<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
-									</div>
+								<div class="faq__item-body">
+									<div class="faq__item-body-inner">Да, мы можем предложить хостинг или помочь с его настройкой.</div>
 								</div>
-
-								<div class="tariffs__item swiper-slide">
-									<div class="tariffs__item-top">
-										<div class="tariffs__item-title">Дизайн сайтов</div>
-										<div class="tariffs__item-desc">
-											Уникальный дизайн <br />
-											за 5 дней
-										</div>
-										<ul class="tariffs__item-list">
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="component"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Прототипирование</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="puzzle"></i>
-												</div>
-												<div class="tariffs__item-elem-title">UI/UX дизайн</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="codesandbox"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Фирменный стиль</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="file-stack"></i>
-												</div>
-												<div class="tariffs__item-elem-title">2 правки бесплатно</div>
-											</li>
-										</ul>
-									</div>
-									<div class="tariffs__item-bottom">
-										<div class="tariffs__item-bottom-price">
-											10 000 <span>₽</span>
-											<div class="tariffs__item-bottom-price--old">14 000 ₽</div>
-										</div>
-										<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
-									</div>
+							</div>
+							<div class="faq__item">
+								<div class="faq__item-title">
+									<div class="faq__item-title_text">Будет ли сайт оптимизирован для SEO?</div>
+									<div class="faq__item-title_icon"></div>
 								</div>
-
-								<div class="tariffs__item swiper-slide">
-									<div class="tariffs__item-top">
-										<div class="tariffs__item-title">Лендинг страница</div>
-										<div class="tariffs__item-desc">
-											Одностраничный сайт <br />
-											за 3 дня
-										</div>
-										<ul class="tariffs__item-list">
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="hammer"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Конструктор продающей страницы</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="blocks"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Более 80 видов блоков</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="command"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Бесплатное наполнение</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="arrow-big-up-dash"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Управление контекстной рекламой</div>
-											</li>
-										</ul>
-									</div>
-									<div class="tariffs__item-bottom">
-										<div class="tariffs__item-bottom-price">
-											15 000 <span>₽</span>
-											<div class="tariffs__item-bottom-price--old">21 950 ₽</div>
-										</div>
-										<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
-									</div>
+								<div class="faq__item-body">
+									<div class="faq__item-body-inner">Да, мы учитываем базовую SEO-оптимизацию при разработке.</div>
 								</div>
-
-								<div class="tariffs__item swiper-slide">
-									<div class="tariffs__item-top">
-										<div class="tariffs__item-title">Интернет-магазин</div>
-										<div class="tariffs__item-desc">Полнофункциональный магазин за 14 дней</div>
-										<ul class="tariffs__item-list">
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="shopping-cart"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Каталог товаров</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="nfc"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Интеграция платежных систем</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="truck"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Настройка доставки</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="shield-user"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Админ-панель для управления</div>
-											</li>
-										</ul>
-									</div>
-									<div class="tariffs__item-bottom">
-										<div class="tariffs__item-bottom-price">
-											30 000 <span>₽</span>
-											<div class="tariffs__item-bottom-price--old">40 000 ₽</div>
-										</div>
-										<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
-									</div>
+							</div>
+							<div class="faq__item">
+								<div class="faq__item-title">
+									<div class="faq__item-title_text">Какие услуги поддержки вы предлагаете?</div>
+									<div class="faq__item-title_icon"></div>
 								</div>
-
-								<div class="tariffs__item swiper-slide">
-									<div class="tariffs__item-top">
-										<div class="tariffs__item-title">SEO-оптимизация</div>
-										<div class="tariffs__item-desc">
-											Повышение позиций в поиске <br />
-											за 30 дней
-										</div>
-										<ul class="tariffs__item-list">
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="crosshair"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Аудит сайта</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="letter-text"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Оптимизация ключевых слов</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="text-search"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Контент-стратегия</div>
-											</li>
-											<li class="tariffs__item-elem">
-												<div class="tariffs__item-elem-icon">
-													<i data-lucide="file-audio"></i>
-												</div>
-												<div class="tariffs__item-elem-title">Аналитика и отчеты</div>
-											</li>
-										</ul>
-									</div>
-									<div class="tariffs__item-bottom">
-										<div class="tariffs__item-bottom-price">
-											10 000 <span>₽</span>
-											<div class="tariffs__item-bottom-price--old">15 000 ₽</div>
-										</div>
-										<button class="tariffs__item-bottom-btn open-popup">Подробнее</button>
+								<div class="faq__item-body">
+									<div class="faq__item-body-inner">
+										Техподдержка, обновления контента и доработка функционала по вашим задачам.
 									</div>
 								</div>
 							</div>
 
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
-
-							<div class="swiper-pagination"></div>
-						</div>
-					</div>
-				</section>
-
-				<section class="advantage">
-					<div class="advantage__inner mp-wrapp">
-						<div class="advantage__title">
-							Случалось ли вам работать с<br />
-							разработчиками, которые:
-						</div>
-
-						<div class="advantage__main">
-							<div class="advantage__left">
-								<div class="advantage__list">
-									<div class="advantage__item">
-										<div class="advantage__item-icon">
-											<i data-lucide="ban"></i>
-										</div>
-										<div class="advantage__item-title">Меняют условия и стоимость в процессе без предупреждения?</div>
-									</div>
-
-									<div class="advantage__item">
-										<div class="advantage__item-icon">
-											<i data-lucide="ban"></i>
-										</div>
-										<div class="advantage__item-title">Обещают быстро, а тянут неделями?</div>
-									</div>
-
-									<div class="advantage__item">
-										<div class="advantage__item-icon">
-											<i data-lucide="ban"></i>
-										</div>
-										<div class="advantage__item-title">Исчезают сразу после запуска проекта?</div>
-									</div>
-
-									<div class="advantage__item">
-										<div class="advantage__item-icon">
-											<i data-lucide="ban"></i>
-										</div>
-										<div class="advantage__item-title">Завышают цену, не давая ценности?</div>
-									</div>
-
-									<div class="advantage__item">
-										<div class="advantage__item-icon">
-											<i data-lucide="ban"></i>
-										</div>
-										<div class="advantage__item-title">Путают простое с «инновационным решением»?</div>
-									</div>
-
-									<div class="advantage__item">
-										<div class="advantage__item-icon">
-											<i data-lucide="ban"></i>
-										</div>
-										<div class="advantage__item-title">Делают сайт, будто застряли в 2012 году?</div>
-									</div>
+							<div class="faq__item">
+								<div class="faq__item-title">
+									<div class="faq__item-title_text">Вы создаете интернет-магазины?</div>
+									<div class="faq__item-title_icon"></div>
 								</div>
-								<div class="advantage__note">
-									<div class="advantage__note-img">
-										<img src="./images/advantages-3.png" alt="" />
-									</div>
-									<div class="advantage__note-title">
-										Создавая сайт для вас, Разработка+ относится к нему как к своему: с полной отдачей, вниманием к
-										деталям и заботой о результате.
-									</div>
-								</div>
-							</div>
-							<div class="advantage__right">
-								<img
-									class="advantage__right-people"
-									src="./images/advantages-1.png"
-									alt="человек не довольный, вектор"
-								/>
-								<div class="brows">
-									<img src="./images/icons/eyebrow-left.png" alt="eyebrow left" />
-									<img src="./images/icons/eyebrow-right.png" alt="eyebrow right" />
-								</div>
-								<div class="eyes">
-									<div class="eye__left">
-										<img src="./images/icons/eye.png" alt="eye left" />
-									</div>
-									<div class="eye__right">
-										<img src="./images/icons/eye.png" alt="eye right" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="features">
-					<div class="container">
-						<h3 class="features__title">
-							Чем Разработка+ отличается от других:<br />
-							факты, которые говорят сами за себя.
-						</h3>
-
-						<div class="features__list">
-							<div class="features__item">
-								<div class="features__item-top">
-									<div class="features__item-icon">
-										<img src="./images/icons/coins.svg" alt="" />
-									</div>
-									<div class="features__item-title">Доступные цены</div>
-								</div>
-								<div class="features__item-text">
-									Мы предлагаем честную стоимость без скрытых доплат. Вы получаете качественный сайт по фиксированной
-									цене, с прозрачным расчётом и без лишних переплат.
+								<div class="faq__item-body">
+									<div class="faq__item-body-inner">Да, мы разрабатываем интернет-магазины с корзиной и оплатой.</div>
 								</div>
 							</div>
 
-							<div class="features__item">
-								<div class="features__item-top">
-									<div class="features__item-icon">
-										<img src="./images/icons/rocket.svg" alt="" />
-									</div>
-									<div class="features__item-title">Быстрая разработка</div>
+							<div class="faq__item">
+								<div class="faq__item-title">
+									<div class="faq__item-title_text">Как происходит процесс разработки?</div>
+									<div class="faq__item-title_icon"></div>
 								</div>
-								<div class="features__item-text">
-									Вы сможете запустить свой проект уже в первый день вашего обращения. Мы работаем по отлаженным
-									процессам и не тратим время впустую.
+								<div class="faq__item-body">
+									<div class="faq__item-body-inner">Анализ, прототип, дизайн, разработка, тестирование и запуск.</div>
 								</div>
 							</div>
-
-							<div class="features__item">
-								<div class="features__item-top">
-									<div class="features__item-icon">
-										<img src="./images/icons/brain.svg" alt="" />
-									</div>
-									<div class="features__item-title">Продуманный подход</div>
-								</div>
-								<div class="features__item-text">
-									 Каждое решение — осознанное. Мы глубоко погружаемся в задачи вашего бизнеса и разрабатываем сайт,
-									который работает на результат.
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="reviews" id="reviews">
-					<div class="reviews__content mp-wrapp">
-						<div class="reviews__title">Разработка+ глазами наших клиентов</div>
-
-						<div class="reviews__wrapper swiper swiper--reviews">
-							<div class="reviews__list swiper-wrapper">
-								<div class="reviews__item swiper-slide">
-									<div class="reviews__item-text">
-										До этого делал сайт на другой платформе, но там только магазины и урезанный функционал. Познакомился
-										с и с тех пор запустил уже 20 сайтов на их платформе. Хотел сказать о их движке, огромный выбор
-										шаблонов,...
-									</div>
-									<div class="reviews__item-bottom">
-										<div class="reviews__item-icon">
-											<img src="./images/icons/reviews.svg" alt="" />
-										</div>
-										<div class="reviews__item-wrap">
-											<div class="reviews__item-title">Дмитрий</div>
-											<div class="reviews__item-desc">владелец интернет-магазина</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="reviews__item swiper-slide">
-									<div class="reviews__item-text">
-										До этого делал сайт на другой платформе, но там только магазины и урезанный функционал. Познакомился
-										с и с тех пор запустил уже 20 сайтов на их платформе. Хотел сказать о их движке, огромный выбор
-										шаблонов,...
-									</div>
-									<div class="reviews__item-bottom">
-										<div class="reviews__item-icon">
-											<img src="./images/icons/reviews.svg" alt="" />
-										</div>
-										<div class="reviews__item-wrap">
-											<div class="reviews__item-title">Дмитрий</div>
-											<div class="reviews__item-desc">владелец интернет-магазина</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="reviews__item swiper-slide">
-									<div class="reviews__item-text">
-										До этого делал сайт на другой платформе, но там только магазины и урезанный функционал. Познакомился
-										с и с тех пор запустил уже 20 сайтов на их платформе. Хотел сказать о их движке, огромный выбор
-										шаблонов,...
-									</div>
-									<div class="reviews__item-bottom">
-										<div class="reviews__item-icon">
-											<img src="./images/icons/reviews.svg" alt="" />
-										</div>
-										<div class="reviews__item-wrap">
-											<div class="reviews__item-title">Дмитрий</div>
-											<div class="reviews__item-desc">владелец интернет-магазина</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
-
-							<div class="swiper-pagination"></div>
-						</div>
-					</div>
-				</section>
-
-				<section class="portfolio" id="portfolio">
-					<div class="portfolio__content mp-wrapp">
-						<div class="portfolio__inner">
-							<div class="portfolio__title">Как Разработка+ меняет бизнес</div>
-							<div class="portfolio__desc">
-								Более 9 000 бизнесов вышли в онлайн с нашей помощью — мы не просто создаём сайты, а сопровождаем каждый
-								проект от идеи до первых клиентов, помогая выстроить эффективное присутствие в интернете и расти дальше.
-							</div>
-						</div>
-
-						<div class="swiper swiper--portfolio">
-							<div class="portfolio__list swiper-wrapper">
-								<div class="portfolio__item swiper-slide">
-									<div class="portfolio__item-top">
-										<div class="portfolio__item-left">
-											<div class="portfolio__item-img">
-												<img src="/images/example.webp" alt="Пример проекта" />
-											</div>
-											<div class="portfolio__item-img-text">
-												<span>Агентства</span>
-											</div>
-										</div>
-										<div class="portfolio__item-right">
-											<div class="portfolio__item-title">
-												<div class="portfolio__item-title-text">Название проекта</div>
-												<div class="portfolio__item-title-icon">
-													<img src="./images/portfolio-icon.png" alt="" />
-												</div>
-											</div>
-											<ul class="portfolio__item-services-list">
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>Адаптивная верстка</span>
-												</li>
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>Интеграция с CRM</span>
-												</li>
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>SEO-оптимизация</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="portfolio__item-bottom">
-										<p>
-											Редизайн и комплексная оптимизация сайта психологических услуг с улучшением интерфейса,
-											адаптивности.
-										</p>
-									</div>
-								</div>
-
-								<div class="portfolio__item swiper-slide">
-									<div class="portfolio__item-top">
-										<div class="portfolio__item-left">
-											<div class="portfolio__item-img">
-												<img src="/images/example.webp" alt="Пример проекта" />
-											</div>
-											<div class="portfolio__item-img-text">
-												<span>Агентства</span>
-											</div>
-										</div>
-										<div class="portfolio__item-right">
-											<div class="portfolio__item-title">
-												<div class="portfolio__item-title-text">Название проекта</div>
-												<div class="portfolio__item-title-icon">
-													<img src="./images/portfolio-icon.png" alt="" />
-												</div>
-											</div>
-											<ul class="portfolio__item-services-list">
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>Адаптивная верстка</span>
-												</li>
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>Интеграция с CRM</span>
-												</li>
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>SEO-оптимизация</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="portfolio__item-bottom">
-										<p>
-											Редизайн и комплексная оптимизация сайта психологических услуг с улучшением интерфейса,
-											адаптивности.
-										</p>
-									</div>
-								</div>
-
-								<div class="portfolio__item swiper-slide">
-									<div class="portfolio__item-top">
-										<div class="portfolio__item-left">
-											<div class="portfolio__item-img">
-												<img src="/images/example.webp" alt="Пример проекта" />
-											</div>
-											<div class="portfolio__item-img-text">
-												<span>Агентства</span>
-											</div>
-										</div>
-										<div class="portfolio__item-right">
-											<div class="portfolio__item-title">
-												<div class="portfolio__item-title-text">Название проекта</div>
-												<div class="portfolio__item-title-icon">
-													<img src="./images/portfolio-icon.png" alt="" />
-												</div>
-											</div>
-											<ul class="portfolio__item-services-list">
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>Адаптивная верстка</span>
-												</li>
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>Интеграция с CRM</span>
-												</li>
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>SEO-оптимизация</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="portfolio__item-bottom">
-										<p>
-											Редизайн и комплексная оптимизация сайта психологических услуг с улучшением интерфейса,
-											адаптивности.
-										</p>
-									</div>
-								</div>
-
-								<div class="portfolio__item swiper-slide">
-									<div class="portfolio__item-top">
-										<div class="portfolio__item-left">
-											<div class="portfolio__item-img">
-												<img src="/images/example.webp" alt="Пример проекта" />
-											</div>
-											<div class="portfolio__item-img-text">
-												<span>Агентства</span>
-											</div>
-										</div>
-										<div class="portfolio__item-right">
-											<div class="portfolio__item-title">
-												<div class="portfolio__item-title-text">Название проекта</div>
-												<div class="portfolio__item-title-icon">
-													<img src="./images/portfolio-icon.png" alt="" />
-												</div>
-											</div>
-											<ul class="portfolio__item-services-list">
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>Адаптивная верстка</span>
-												</li>
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>Интеграция с CRM</span>
-												</li>
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>SEO-оптимизация</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="portfolio__item-bottom">
-										<p>
-											Редизайн и комплексная оптимизация сайта психологических услуг с улучшением интерфейса,
-											адаптивности.
-										</p>
-									</div>
-								</div>
-
-								<div class="portfolio__item swiper-slide">
-									<div class="portfolio__item-top">
-										<div class="portfolio__item-left">
-											<div class="portfolio__item-img">
-												<img src="/images/example.webp" alt="Пример проекта" />
-											</div>
-											<div class="portfolio__item-img-text">
-												<span>Агентства</span>
-											</div>
-										</div>
-										<div class="portfolio__item-right">
-											<div class="portfolio__item-title">
-												<div class="portfolio__item-title-text">Название проекта</div>
-												<div class="portfolio__item-title-icon">
-													<img src="./images/portfolio-icon.png" alt="" />
-												</div>
-											</div>
-											<ul class="portfolio__item-services-list">
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>Адаптивная верстка</span>
-												</li>
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>Интеграция с CRM</span>
-												</li>
-												<li class="portfolio__item-services-item">
-													<div class="portfolio__item-services-icon"></div>
-													<span>SEO-оптимизация</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="portfolio__item-bottom">
-										<p>
-											Редизайн и комплексная оптимизация сайта психологических услуг с улучшением интерфейса,
-											адаптивности.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
-
-							<div class="swiper-pagination"></div>
-						</div>
-					</div>
-				</section>
-
-				<section class="faq" id="faq">
-					<div class="faq__wrapper">
-						<div class="container">
-							<div class="faq__title">Часто задаваемые вопросы</div>
-							<div class="faq__list">
-								<div class="faq__item">
-									<div class="faq__item-title">
-										<div class="faq__item-title_text">Как быстро создадите сайт?</div>
-										<div class="faq__item-title_icon"></div>
-									</div>
-									<div class="faq__item-body">
-										<div class="faq__item-body-inner">
-											Сроки зависят от сложности проекта. Простой сайт — от 7 дней, сложный — от 2 недель.
-										</div>
-									</div>
-								</div>
-								<div class="faq__item">
-									<div class="faq__item-title">
-										<div class="faq__item-title_text">Сколько стоит разработка сайта?</div>
-										<div class="faq__item-title_icon"></div>
-									</div>
-									<div class="faq__item-body">
-										<div class="faq__item-body-inner">
-											Цена начинается от $500 для лендинга и зависит от функционала.
-										</div>
-									</div>
-								</div>
-
-								<div class="faq__item">
-									<div class="faq__item-title">
-										<div class="faq__item-title_text">Сайт будет адаптивным?</div>
-										<div class="faq__item-title_icon"></div>
-									</div>
-									<div class="faq__item-body">
-										<div class="faq__item-body-inner">
-											Все наши сайты адаптированы для мобильных устройств и планшетов.
-										</div>
-									</div>
-								</div>
-								<div class="faq__item">
-									<div class="faq__item-title">
-										<div class="faq__item-title_text">Предоставляете ли вы хостинг?</div>
-										<div class="faq__item-title_icon"></div>
-									</div>
-									<div class="faq__item-body">
-										<div class="faq__item-body-inner">Да, мы можем предложить хостинг или помочь с его настройкой.</div>
-									</div>
-								</div>
-								<div class="faq__item">
-									<div class="faq__item-title">
-										<div class="faq__item-title_text">Будет ли сайт оптимизирован для SEO?</div>
-										<div class="faq__item-title_icon"></div>
-									</div>
-									<div class="faq__item-body">
-										<div class="faq__item-body-inner">Да, мы учитываем базовую SEO-оптимизацию при разработке.</div>
-									</div>
-								</div>
-								<div class="faq__item">
-									<div class="faq__item-title">
-										<div class="faq__item-title_text">Какие услуги поддержки вы предлагаете?</div>
-										<div class="faq__item-title_icon"></div>
-									</div>
-									<div class="faq__item-body">
-										<div class="faq__item-body-inner">
-											Техподдержка, обновления контента и доработка функционала по вашим задачам.
-										</div>
-									</div>
-								</div>
-
-								<div class="faq__item">
-									<div class="faq__item-title">
-										<div class="faq__item-title_text">Вы создаете интернет-магазины?</div>
-										<div class="faq__item-title_icon"></div>
-									</div>
-									<div class="faq__item-body">
-										<div class="faq__item-body-inner">Да, мы разрабатываем интернет-магазины с корзиной и оплатой.</div>
-									</div>
-								</div>
-
-								<div class="faq__item">
-									<div class="faq__item-title">
-										<div class="faq__item-title_text">Как происходит процесс разработки?</div>
-										<div class="faq__item-title_icon"></div>
-									</div>
-									<div class="faq__item-body">
-										<div class="faq__item-body-inner">Анализ, прототип, дизайн, разработка, тестирование и запуск.</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="form">
-					<div class="form__content mp-wrapp">
-						<div class="form__title">До старта - всего один шаг</div>
-						<div class="form__desc">
-							Эта информация поможет нам погрузиться в контекст задачи. А детали мы обсудим по телефону
-						</div>
-						<div class="form__main">
-							<form action="post">
-								<div class="form__field">
-									<input placeholder="E-mail:" type="email" name="email" id="email" autocomplete="email" required />
-									<div class="form__field-title">E-mail:</div>
-								</div>
-
-								<div class="form__field">
-									<input
-										placeholder="Телефон:"
-										class="phone-input"
-										type="tel"
-										name="phone"
-										autocomplete="tel"
-										required
-									/>
-									<div class="form__field-title">Телефон: <span>*</span></div>
-								</div>
-
-								<button class="form__btn" type="submit">Отправить</button>
-							</form>
-						</div>
-						<div class="form__note">
-							Нажимая кнопку, вы соглашаетесь на
-							<a href="/privacy.html">обработку персональных данных</a>
-						</div>
-					</div>
-				</section>
-
-				<footer class="footer">
-					<div class="footer__inner mp-wrapp">
-						<div class="footer__paysystems">
-							<div class="footer__paysystems-title">
-								Принимаем оплату <br />
-								любым удобным способом
-							</div>
-							<div class="footer__paysystems-list">
-								<div class="footer__paysystems-item">
-									<img src="/images/icons/pay/mastercard.svg" alt="" />
-								</div>
-
-								<div class="footer__paysystems-item">
-									<img src="/images/icons/pay/account.svg" alt="" />
-								</div>
-
-								<div class="footer__paysystems-item">
-									<img src="/images/icons/pay/mir.svg" alt="" />
-								</div>
-
-								<div class="footer__paysystems-item">
-									<img src="/images/icons/pay/sbp.svg" alt="" />
-								</div>
-
-								<div class="footer__paysystems-item">
-									<img src="/images/icons/pay/visa.svg" alt="" />
-								</div>
-
-								<div class="footer__paysystems-item">
-									<img src="/images/icons/pay/yandex.svg" alt="" />
-								</div>
-							</div>
-						</div>
-
-						<div class="footer__content">
-							<div class="footer__head">
-								<a href="/" class="footer__logo">Разработка+</a>
-								<div class="footer__socials">
-									<a class="footer__socials-link" rel="nofollow" href="http://t.me/aleksustm">
-										<div class="footer__socials-icon">
-											<img src="/images/icons/telegram.svg" alt="" />
-										</div>
-									</a>
-
-									<a class="footer__socials-link" rel="nofollow" href="https://wa.me/+79630376182">
-										<div class="footer__socials-icon">
-											<img src="/images/icons/whatsapp.svg" alt="" />
-										</div>
-									</a>
-
-									<a class="footer__socials-link" rel="nofollow" href="https://vk.com/development.plus">
-										<div class="footer__socials-icon">
-											<img src="/images/icons/vk.svg" alt="" />
-										</div>
-									</a>
-								</div>
-							</div>
-
-							<div class="footer__main">
-								<div class="footer__main-block">
-									<span class="footer__caption">Наши услуги</span>
-									<nav class="footer__nav">
-										<a href="#">Лендинг</a>
-										<a href="#">Сайт-визитка</a>
-										<a href="#">Интернет-магазин</a>
-										<a href="#">Корпоративный сайт</a>
-									</nav>
-								</div>
-
-								<div class="footer__main-block">
-									<span class="footer__caption">Дополнительно</span>
-									<nav class="footer__nav">
-										<a href="#">Дизайн сайтов</a>
-										<a href="#">SEO-оптимизация</a>
-										<a href="#">Адаптивная вёрстка</a>
-										<a href="#">Продвижение сайта</a>
-									</nav>
-								</div>
-
-								<div class="footer__main-block">
-									<span class="footer__caption">Навигация</span>
-									<nav class="footer__nav">
-										<a href="#">Цены</a>
-										<a href="#">Портфолио</a>
-										<a href="#">Отзывы</a>
-										<a href="#">Контакты</a>
-									</nav>
-								</div>
-
-								<div class="footer__main-block">
-									<span class="footer__caption">Контакты</span>
-									<div class="footer__nav">
-										<span>Екатеринбург</span>
-										<a href="tel:+79530526260">+7 (953) 052-62-60</a>
-										<a href="https://t.me/development_plus">@development_plus</a>
-										<a href="mailto:razrabotka_plus@gmail.com">razrabotka_plus@gmail.com</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<p class="footer__copyright">Разработка+ © 2019 - 2025 Все права защищены</p>
-					</div>
-				</footer>
-
-				<div class="global__messengers">
-					<div class="global__messengers-btn">
-						<i data-lucide="messages-square"></i>
-					</div>
-
-					<div class="global-messengers__list">
-						<div class="global-messengers__list-inner">
-							<a href="mailto:razrabotka_plus@gmail.com" class="global-messengers__item">
-								<img src="/images/icons/chat.svg" alt="Chat" />
-							</a>
-							<a href="https://t.me/development_plus" class="global-messengers__item">
-								<img src="/images/icons/telegram.svg" alt="Telegram" />
-							</a>
-							<a href="https://wa.me/79530526260" class="global-messengers__item">
-								<img src="/images/icons/whatsapp.svg" alt="Whatsapp" />
-							</a>
 						</div>
 					</div>
 				</div>
+			</section>
 
-				<div class="scroll-to-top">
-					<div class="scroll-to-top__icon">
-						<img src="images/icons/arrow-top.svg" alt="" />
+			<section class="form">
+				<div class="form__content mp-wrapp">
+					<div class="form__title">До старта - всего один шаг</div>
+					<div class="form__desc">
+						Эта информация поможет нам погрузиться в контекст задачи. А детали мы обсудим по телефону
 					</div>
-					<div class="scroll-to-top__text">Наверх</div>
-				</div>
+					<div class="form__main">
+						<form action="post">
+							<div class="form__field">
+								<input placeholder="E-mail:" type="email" name="email" id="email" autocomplete="email" required />
+								<div class="form__field-title">E-mail:</div>
+							</div>
 
-				<div class="popup-overlay" id="popupOverlay">
-					<div class="popup" id="popup" role="dialog" aria-labelledby="popupTitle" aria-modal="true">
-						<div class="popup-title" id="popupTitle">Заказать звонок</div>
-						<button class="popup-close" id="popupClose" aria-label="Закрыть попап">✖</button>
-						<form id="contactForm">
-							<input
-								type="text"
-								name="name"
-								placeholder="Ваше имя:"
-								autocomplete="name"
-								required
-								aria-label="Ваше имя"
-							/>
+							<div class="form__field">
+								<input placeholder="Телефон:" class="phone-input" type="tel" name="phone" autocomplete="tel" required />
+								<div class="form__field-title">Телефон: <span>*</span></div>
+							</div>
 
-							<input
-								class="phone-input"
-								type="tel"
-								name="phone"
-								placeholder="Телефон:"
-								autocomplete="tel"
-								required
-								aria-label="Телефон"
-							/>
-
-							<textarea name="question" placeholder="Ваш вопрос:" aria-label="Ваш вопрос"></textarea>
-
-							<label class="popup-label">
-								<div class="checkbox-wrapper-44">
-									<label class="toggleButton">
-										<input type="checkbox" name="consent" required aria-label="Согласие на обработку данных" />
-									</label>
-								</div>
-								<span>Я согласен(а) с обработкой персональных данных</span>
-							</label>
-
-							<button class="btn" type="submit">Отправить</button>
+							<button class="form__btn" type="submit">Отправить</button>
 						</form>
 					</div>
+					<div class="form__note">
+						Нажимая кнопку, вы соглашаетесь на
+						<a href="/privacy.html">обработку персональных данных</a>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<div class="footer__inner mp-wrapp">
+					<div class="footer__paysystems">
+						<div class="footer__paysystems-title">
+							Принимаем оплату <br />
+							любым удобным способом
+						</div>
+						<div class="footer__paysystems-list">
+							<div class="footer__paysystems-item">
+								<img src="/images/icons/pay/mastercard.svg" alt="" />
+							</div>
+
+							<div class="footer__paysystems-item">
+								<img src="/images/icons/pay/account.svg" alt="" />
+							</div>
+
+							<div class="footer__paysystems-item">
+								<img src="/images/icons/pay/mir.svg" alt="" />
+							</div>
+
+							<div class="footer__paysystems-item">
+								<img src="/images/icons/pay/sbp.svg" alt="" />
+							</div>
+
+							<div class="footer__paysystems-item">
+								<img src="/images/icons/pay/visa.svg" alt="" />
+							</div>
+
+							<div class="footer__paysystems-item">
+								<img src="/images/icons/pay/yandex.svg" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__content">
+						<div class="footer__head">
+							<a href="/" class="footer__logo">Разработка+</a>
+							<div class="footer__socials">
+								<a class="footer__socials-link" rel="nofollow" href="http://t.me/aleksustm">
+									<div class="footer__socials-icon">
+										<img src="/images/icons/telegram.svg" alt="" />
+									</div>
+								</a>
+
+								<a class="footer__socials-link" rel="nofollow" href="https://wa.me/+79630376182">
+									<div class="footer__socials-icon">
+										<img src="/images/icons/whatsapp.svg" alt="" />
+									</div>
+								</a>
+
+								<a class="footer__socials-link" rel="nofollow" href="https://vk.com/development.plus">
+									<div class="footer__socials-icon">
+										<img src="/images/icons/vk.svg" alt="" />
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="footer__main">
+							<div class="footer__main-block">
+								<span class="footer__caption">Наши услуги</span>
+								<nav class="footer__nav">
+									<a href="#">Лендинг</a>
+									<a href="#">Сайт-визитка</a>
+									<a href="#">Интернет-магазин</a>
+									<a href="#">Корпоративный сайт</a>
+								</nav>
+							</div>
+
+							<div class="footer__main-block">
+								<span class="footer__caption">Дополнительно</span>
+								<nav class="footer__nav">
+									<a href="#">Дизайн сайтов</a>
+									<a href="#">SEO-оптимизация</a>
+									<a href="#">Адаптивная вёрстка</a>
+									<a href="#">Продвижение сайта</a>
+								</nav>
+							</div>
+
+							<div class="footer__main-block">
+								<span class="footer__caption">Навигация</span>
+								<nav class="footer__nav">
+									<a href="#">Цены</a>
+									<a href="#">Портфолио</a>
+									<a href="#">Отзывы</a>
+									<a href="#">Контакты</a>
+								</nav>
+							</div>
+
+							<div class="footer__main-block">
+								<span class="footer__caption">Контакты</span>
+								<div class="footer__nav">
+									<span>Екатеринбург</span>
+									<a href="tel:+79530526260">+7 (953) 052-62-60</a>
+									<a href="https://t.me/development_plus">@development_plus</a>
+									<a href="mailto:razrabotka_plus@gmail.com">razrabotka_plus@gmail.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="footer__copyright">Разработка+ © 2019 - 2025 Все права защищены</p>
+				</div>
+			</footer>
+
+			<div class="global__messengers">
+				<div class="global__messengers-btn">
+					<i data-lucide="messages-square"></i>
+				</div>
+
+				<div class="global-messengers__list">
+					<div class="global-messengers__list-inner">
+						<a href="mailto:razrabotka_plus@gmail.com" class="global-messengers__item">
+							<img src="/images/icons/chat.svg" alt="Chat" />
+						</a>
+						<a href="https://t.me/development_plus" class="global-messengers__item">
+							<img src="/images/icons/telegram.svg" alt="Telegram" />
+						</a>
+						<a href="https://wa.me/79530526260" class="global-messengers__item">
+							<img src="/images/icons/whatsapp.svg" alt="Whatsapp" />
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="scroll-to-top">
+				<div class="scroll-to-top__icon">
+					<img src="images/icons/arrow-top.svg" alt="" />
+				</div>
+				<div class="scroll-to-top__text">Наверх</div>
+			</div>
+
+			<div class="popup-overlay" id="popupOverlay">
+				<div class="popup" id="popup" role="dialog" aria-labelledby="popupTitle" aria-modal="true">
+					<div class="popup-title" id="popupTitle">Заказать звонок</div>
+					<button class="popup-close" id="popupClose" aria-label="Закрыть попап">✖</button>
+					<form id="contactForm">
+						<input type="text" name="name" placeholder="Ваше имя:" autocomplete="name" required aria-label="Ваше имя" />
+
+						<input
+							class="phone-input"
+							type="tel"
+							name="phone"
+							placeholder="Телефон:"
+							autocomplete="tel"
+							required
+							aria-label="Телефон"
+						/>
+
+						<textarea name="question" placeholder="Ваш вопрос:" aria-label="Ваш вопрос"></textarea>
+
+						<label class="popup-label">
+							<div class="checkbox-wrapper-44">
+								<label class="toggleButton">
+									<input type="checkbox" name="consent" required aria-label="Согласие на обработку данных" />
+								</label>
+							</div>
+							<span>Я согласен(а) с обработкой персональных данных</span>
+						</label>
+
+						<button class="btn" type="submit">Отправить</button>
+					</form>
 				</div>
 			</div>
 		</div>
 
-		<script src="libs/gsap/gsap.min.js" defer></script>
-		<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
-		<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
 		<script src="https://unpkg.com/imask"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+		<script src="/libs/swiper/swiper.min.js"></script>
 		<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 		<script type="module" src="/scripts/app.js" defer></script>
 	</body>

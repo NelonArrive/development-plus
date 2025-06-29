@@ -13,6 +13,8 @@ body {
 	font-family: 'Manrope', serif;
 	font-size: 16px;
 }
+.wrapper {
+}
 .container {
 	max-width: 1440px;
 	padding: 0 32px;
@@ -986,7 +988,7 @@ section {
 
 /* ========= footer ========= */
 .footer {
-	padding: 60px 0 100px;
+	padding: 60px 0 90px;
 	background: #f4f5f4;
 }
 .footer__inner {

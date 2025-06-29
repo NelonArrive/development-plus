@@ -1,15 +1,12 @@
 import { TELEGRAM_TOKEN, TELEGRAM_CHAT_ID } from './config.js'
 
-// Smooth scrolling
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
-
-ScrollSmoother.create({
-	wrapper: '.wrapper',
-	content: '.content',
-	smooth: 1.3,
-	smoothTouch: 0.1,
-	effects: true
-})
+// Initialize Lenis
+const lenis = new Lenis()
+function raf(time) {
+	lenis.raf(time)
+	requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
 
 // Accordion
 const accordion = document.querySelector('.faq__item-title')
@@ -19,9 +16,6 @@ for (let i = 0; i < accordion?.length; i++) {
 		this.classList.toggle('active')
 	})
 }
-
-// Lucide Icons
-lucide.createIcons()
 
 // Accordion
 document.querySelectorAll('.faq__item-title').forEach(title => {
@@ -235,3 +229,17 @@ overlay.addEventListener('click', e => {
 document.querySelectorAll('.phone-input').forEach(input => {
 	IMask(input, { mask: '+{7} (000) 000-00-00' })
 })
+
+// AOS
+document.addEventListener('DOMContentLoaded', function () {
+	AOS.init({
+		disable: window.innerWidth < 768,
+		// duration: 800,
+		once: true,
+		offset: 200,
+		easing: 'ease-out'
+	})
+})
+
+// Lucide
+lucide.createIcons()
