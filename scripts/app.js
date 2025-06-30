@@ -68,7 +68,7 @@ const swiperTariffs = new Swiper('.swiper--tariffs', {
 	slidesPerView: 4,
 	speed: 600,
 	lazy: true,
-	// autoplay: { delay: 5000 },
+	autoplay: { delay: 5000 },
 
 	breakpoints: {
 		0: {
@@ -97,7 +97,7 @@ const swiperReviews = new Swiper('.swiper--reviews', {
 	spaceBetween: 30,
 	slidesPerView: 2,
 	speed: 600,
-	// autoplay: { delay: 4000 },
+	autoplay: { delay: 4000 },
 
 	breakpoints: {
 		0: {
@@ -123,7 +123,7 @@ const swiperPortfolio = new Swiper('.swiper--portfolio', {
 	spaceBetween: 30,
 	slidesPerView: 2,
 	speed: 500,
-	// autoplay: { delay: 6000 },
+	autoplay: { delay: 6000 },
 
 	breakpoints: {
 		0: {

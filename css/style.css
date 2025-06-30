@@ -691,11 +691,37 @@ section {
 	width: calc(50% - 30px);
 	padding: 32px;
 	border-radius: 22px;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	background: #f7f8fb;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+	transition: all 0.3s ease-in;
+}
+.reviews__item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+.reviews__item-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+.reviews__item-stars {
+	display: flex;
+	gap: 2px;
+}
+.star {
+	width: 25px;
+	height: 25px;
+	color: #fbbf24;
+	fill: currentColor;
+}
+.reviews__item-date {
+	font-size: 14px;
+	color: #6b7280;
+	font-weight: 500;
 }
 .reviews__item-text {
 	color: #333;
@@ -717,6 +743,22 @@ section {
 .reviews__item-title {
 }
 .reviews__item-desc {
+}
+.verified-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	background: #10b981;
+	color: white;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 4px 8px;
+	border-radius: 12px;
+	margin-left: 8px;
+}
+.verified-badge img {
+	width: 12px;
+	height: 12px;
 }
 
 /* ========= portfolio ========= */
