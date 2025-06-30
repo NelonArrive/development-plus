@@ -230,16 +230,79 @@ document.querySelectorAll('.phone-input').forEach(input => {
 	IMask(input, { mask: '+{7} (000) 000-00-00' })
 })
 
-// AOS
-document.addEventListener('DOMContentLoaded', function () {
-	AOS.init({
-		disable: window.innerWidth < 768,
-		// duration: 800,
-		once: true,
-		offset: 200,
-		easing: 'ease-out'
-	})
+AOS.init({
+	disable: 'mobile',
+	once: true,
+	easing: 'ease-out'
 })
 
-// Lucide
 lucide.createIcons()
+
+document.addEventListener('DOMContentLoaded', () => {
+	const body = document.querySelector('body')
+	const cursor = document.getElementById('cursor')
+	const aura = document.getElementById('aura')
+	const links = document.getElementsByTagName('a')
+
+	let mouseX = 0,
+		mouseY = 0,
+		posX = 0,
+		posY = 0
+
+	// Mouse coordinate tracking
+	function mouseCoords(e) {
+		mouseX = e.clientX
+		mouseY = e.clientY
+	}
+
+	// Mouse move event
+	body.addEventListener('mousemove', e => {
+		mouseCoords(e)
+		cursor.classList.remove('hidden')
+		aura.classList.remove('hidden')
+	})
+
+	// Smooth cursor following animation
+	gsap.to({}, 0.01, {
+		repeat: -1,
+		onRepeat: () => {
+			posX += (mouseX - posX) / 5
+			posY += (mouseY - posY) / 5
+
+			gsap.set(cursor, {
+				css: {
+					left: mouseX,
+					top: mouseY
+				}
+			})
+
+			gsap.set(aura, {
+				css: {
+					left: posX,
+					top: posY
+				}
+			})
+		}
+	})
+
+	// Interactive elements hover effects
+	const interactiveElements = [...links, ...document.getElementsByTagName('button')]
+
+	for (let i = 0; i < interactiveElements.length; i++) {
+		interactiveElements[i].addEventListener('mouseover', () => {
+			cursor.classList.add('active')
+			aura.classList.add('active')
+		})
+
+		interactiveElements[i].addEventListener('mouseout', () => {
+			cursor.classList.remove('active')
+			aura.classList.remove('active')
+		})
+	}
+
+	// Hide cursor when mouse leaves the page
+	body.addEventListener('mouseleave', () => {
+		cursor.classList.add('hidden')
+		aura.classList.add('hidden')
+	})
+})

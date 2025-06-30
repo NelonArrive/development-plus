@@ -5,6 +5,7 @@
 * {
 	scrollbar-width: thin;
 	scrollbar-color: #5d17bf #c6c2cd;
+	cursor: none !important;
 }
 html {
 	scroll-behavior: smooth;
@@ -12,8 +13,10 @@ html {
 body {
 	font-family: 'Manrope', serif;
 	font-size: 16px;
+	overflow-x: hidden;
 }
 .wrapper {
+	min-height: 100vh;
 }
 .container {
 	max-width: 1440px;
@@ -969,6 +972,10 @@ section {
 	cursor: pointer;
 	text-decoration: underline;
 }
+.success-message {
+	opacity: 0;
+	visibility: hidden;
+}
 .form__btn {
 	cursor: pointer;
 	padding: 18.5px 24px;
@@ -1300,4 +1307,45 @@ textarea {
 }
 .text__body a {
 	color: #0369d9;
+}
+
+/* custom-cursor */
+#cursor,
+#aura {
+	position: fixed;
+	border-radius: 100%;
+	transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+	user-select: none;
+	pointer-events: none;
+	z-index: 10000;
+}
+
+#cursor {
+	width: 8px;
+	height: 8px;
+	background-color: rgba(0, 0, 0, 0.5);
+	transform: translate(-4px, -4px) scale(1);
+}
+
+#cursor.active {
+	opacity: 0;
+	transform: translate(-4px, -4px) scale(0);
+}
+
+#aura {
+	width: 46px;
+	height: 46px;
+	border: 1px solid rgba(58, 8, 127, 0.2);
+	background-color: rgba(0, 0, 0, 0.027);
+	transform: translate(-23px, -23px);
+}
+
+#aura.active {
+	border: 1.2px solid rgba(0, 0, 0, 0.115);
+	transform: translate(-23px, -23px) scale(1.3);
+}
+
+#aura.hidden,
+#cursor.hidden {
+	transform: scale(0.001);
 }
