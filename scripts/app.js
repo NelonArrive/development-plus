@@ -9,15 +9,6 @@ function raf(time) {
 requestAnimationFrame(raf)
 
 // Accordion
-const accordion = document.querySelector('.faq__item-title')
-
-for (let i = 0; i < accordion?.length; i++) {
-	accordion[i].addEventListener('click', () => {
-		this.classList.toggle('active')
-	})
-}
-
-// Accordion
 document.querySelectorAll('.faq__item-title').forEach(title => {
 	title.addEventListener('click', () => {
 		const item = title.closest('.faq__item')
@@ -239,6 +230,22 @@ AOS.init({
 lucide.createIcons()
 
 document.addEventListener('DOMContentLoaded', () => {
+	// Проверка на тач-устройство
+	const isTouchDevice = () => {
+		return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0
+	}
+
+	// Если это тач-устройство, скрываем курсор и выходим
+	if (isTouchDevice()) {
+		const cursor = document.getElementById('cursor')
+		const aura = document.getElementById('aura')
+
+		if (cursor) cursor.style.display = 'none'
+		if (aura) aura.style.display = 'none'
+
+		return // Прекращаем выполнение остального кода
+	}
+
 	const body = document.querySelector('body')
 	const cursor = document.getElementById('cursor')
 	const aura = document.getElementById('aura')

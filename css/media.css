@@ -363,6 +363,10 @@
 }
 
 @media screen and (max-width: 768px) {
+	#cursor,
+	#aura {
+		display: none !important;
+	}
 	.intro-circle {
 		background: linear-gradient(to top right, rgb(153 0 255 / 36%), rgb(94 33 180 / 70%));
 	}
@@ -399,27 +403,42 @@
 }
 
 @media screen and (max-width: 640px) {
+	.site-cookie__button {
+		font-size: 10px;
+		padding: 11px 16px;
+		margin-left: 0;
+	}
+	.site-cookie__text {
+		font-size: 9px;
+		margin-bottom: 8px;
+	}
+	.site-cookie {
+		left: 16px;
+		right: 16px;
+		bottom: 16px;
+		padding: 16px;
+		border-radius: 11px;
+		transform: translateY(150%);
+		flex-direction: column;
+		align-items: flex-start;
+	}
 	.popup {
 		padding: 20px;
 		width: 95%;
 	}
-
 	.popup-title {
 		font-size: 24px;
 		line-height: 32px;
 	}
-
 	.popup input,
 	.popup textarea {
 		padding: 12px 15px;
 		font-size: 14px;
 	}
-
 	.btn {
 		width: 100%;
 		padding: 12px;
 	}
-
 	.popup-close {
 		width: 35px;
 		height: 35px;
@@ -708,5 +727,12 @@
 	}
 	.advantage__note-title {
 		padding-bottom: 7px;
+	}
+}
+
+@media (hover: none) and (pointer: coarse) {
+	#cursor,
+	#aura {
+		display: none !important;
 	}
 }

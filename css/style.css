@@ -147,16 +147,16 @@ section {
 	padding: 12px 32px;
 	border-radius: 40px;
 	background: linear-gradient(to top right, #9900ff, #490b9f);
-	transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out !important;
 	position: relative;
 	cursor: pointer;
 	transform: translateY(0);
 }
 .menu__btn:hover {
-	transform: translateY(2px);
+	transform: translateY(2px) !important;
 }
 .menu__btn:active {
-	transform: translateY(3px);
+	transform: translateY(3px) !important;
 }
 /* ========= burger ========= */
 .menu__btn-burger,
@@ -239,13 +239,13 @@ section {
 	line-height: 140%;
 	letter-spacing: -0.2px;
 	background: linear-gradient(to top right, rgb(153, 0, 255, 0.6), rgb(73, 11, 159, 0.6));
-	transition: all 0.3s ease;
+	transition: all 0.3s ease !important;
 }
 .intro__btn:hover {
-	transform: translateY(2px);
+	transform: translateY(2px) !important;
 }
 .intro__btn:active {
-	transform: translateY(3px);
+	transform: translateY(3px) !important;
 }
 .intro__right {
 	position: relative;
@@ -405,7 +405,13 @@ section {
 	font-weight: 600;
 	line-height: 120%;
 	letter-spacing: -0.2px;
-	transition: all 0.3s ease;
+	transition: all 0.3s ease !important;
+}
+.tariffs__item-bottom-btn:hover {
+	transform: translateY(2px) !important;
+}
+.tariffs__item-bottom-btn:active {
+	transform: translateY(3px) !important;
 }
 /* ========= global swiper ========= */
 .swiper-pagination {
@@ -514,12 +520,12 @@ section {
 	border-radius: min(5vw, 18px);
 	padding: min(5vw, 24px);
 	background: #fff;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out !important;
 	transform: translateY(0px);
 	box-shadow: 0px 2px 8px 0px #00000037;
 }
 .advantage__item:hover {
-	transform: translateY(2px);
+	transform: translateY(2px) !important;
 	box-shadow: 0px 4px 10px 0px #00000078;
 }
 .advantage__item-icon {
@@ -1353,6 +1359,52 @@ textarea {
 }
 .text__body a {
 	color: #0369d9;
+}
+
+/* cookie */
+.site-cookie {
+	position: fixed;
+	background: #f5f6f5;
+	z-index: 101;
+	left: 32px;
+	right: 32px;
+	bottom: 24px;
+	max-width: 982px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 24px;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	transform: translateY(150%);
+	transition: transform 0.3s;
+}
+.site-cookie.show {
+	transform: none;
+}
+.site-cookie__text {
+	font-size: 14px;
+	flex: 1 0 1%;
+	margin-bottom: 0;
+}
+.site-cookie__button {
+	flex: none;
+	padding: 16px 24px;
+	margin-left: 30px;
+	font-size: 14px;
+	background: #490b9f;
+	border: none;
+	outline: none;
+	border-radius: 26px;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.site-cookie__button:hover {
+
 }
 
 /* custom-cursor */
