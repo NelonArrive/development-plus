@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /search/
+Disallow: /?*
+
+Sitemap: http://development-plus.su/sitemap.xml
