@@ -477,11 +477,11 @@ section {
 .swiper-button-prev {
 	left: auto;
 	right: 60px;
-	background-image: url('/images/icons/prev.svg');
+	background-image: url('/img/icons/prev.svg');
 }
 .swiper-button-next {
 	right: 0;
-	background-image: url('/images/icons/next.svg');
+	background-image: url('/img/icons/next.svg');
 }
 /* ========= advantages ========= */
 .advantage {

@@ -1,9 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<meta
+			name="description"
+			content="Техническая поддержка сайтов 24/7 от Разработка+ — 🛠️ обслуживание, 🔧 исправления и развитие веб-проектов. Быстро, надёжно, профессионально."
+		/>
+
+		<title>Техническая поддержка сайтов и веб-приложений 24/7 | Служба поддержки Разработка+</title>
+
+		<link rel="stylesheet" href="/css/reset.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/media.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
 	</head>
-	<body></body>
+	<body>
+		<div class="wrapper">
+			<div id="cursor"></div>
+			<div id="aura"></div>
+
+			<header class="header" data-aos="fade-down" data-aos-duration="800">
+				<div class="header__row mp-wrapp">
+					<a href="/" class="header__logo" data-aos="fade-right" data-aos-duration="1000">
+						<h1>Разработка+</h1>
+					</a>
+
+					<div class="header__contacts" data-aos="fade-left" data-aos-duration="1000">
+						<div class="header__contacts-list">
+							<div class="header__contacts-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+								<div class="header__contacts-icon">
+									<i data-lucide="map-pin"></i>
+								</div>
+								<div class="header__contacts-info">
+									<div class="header__contacts-title">Местоположение:</div>
+									<div class="header__contacts-text">Екатеринбург</div>
+								</div>
+							</div>
+
+							<div class="header__contacts-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+								<div class="header__contacts-icon">
+									<i data-lucide="phone-incoming"></i>
+								</div>
+								<div class="header__contacts-info">
+									<div class="header__contacts-title">Телефон:</div>
+									<div class="header__contacts-text">
+										<a href="tel:+79530526260">+7 (953) 052-62-60</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="header__contacts-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+								<div class="header__contacts-icon">
+									<i data-lucide="send"></i>
+								</div>
+								<div class="header__contacts-info">
+									<div class="header__contacts-title">Телеграм:</div>
+									<div class="header__contacts-text">
+										<a href="http://t.me/devepment_plus" target="_blank" rel="noopener noreferrer">@development_plus</a>
+									</div>
+								</div>
+							</div>
+
+							<button class="menu__btn open-popup" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
+								Заказать сайт
+							</button>
+						</div>
+
+						<button
+							class="menu__btn-burger"
+							id="burger"
+							title="Кнопка открытия меню"
+							data-aos="fade-left"
+							data-aos-delay="500"
+							data-aos-duration="800"
+						>
+							<img src="img/icons/menu-burger.svg" alt="" />
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<div class="menu" id="menu" data-aos="fade-right" data-aos-duration="1000">
+				<div class="menu__inner mp-wrapp">
+					<nav class="menu__nav">
+						<button
+							class="menu__btn-close"
+							id="close"
+							title="Кнопка закрытия меню"
+							data-aos="fade-down"
+							data-aos-delay="100"
+							data-aos-duration="800"
+						>
+							<img src="./img/icons/close.svg" alt="" />
+						</button>
+						<ul class="menu__list">
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+								<a href="#home" class="menu__link active">Разработка сайтов</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+								<a href="#price" class="menu__link">Цены</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+								<a href="#portfolio" class="menu__link">Портфолио</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
+								<a href="#reviews" class="menu__link">Отзывы</a>
+							</li>
+							<!-- <li class="menu__item" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+								<a href="#about" class="menu__link">О нас</a>
+							</li> -->
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
+								<a href="#faq" class="menu__link">FAQ</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+								<a href="/blog.html" class="menu__link">Блог</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="900" data-aos-duration="800">
+								<a href="/contacts.html" class="menu__link">Контакты</a>
+							</li>
+							<li class="menu__item" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800">
+								<a href="/support.html" class="menu__link">Поддержка</a>
+							</li>
+						</ul>
+					</nav>
+					<button
+						type="button"
+						class="menu__btn open-popup"
+						data-aos="zoom-in"
+						data-aos-delay="1100"
+						data-aos-duration="800"
+					>
+						Заказать сайт
+					</button>
+				</div>
+			</div>
+
+			<section></section>
+
+			<footer class="footer">
+				<div class="footer__inner mp-wrapp">
+					<div class="footer__paysystems">
+						<div class="footer__paysystems-title">
+							Принимаем оплату <br />
+							любым удобным способом
+						</div>
+						<div class="footer__paysystems-list">
+							<div class="footer__paysystems-item">
+								<img src="/img/icons/pay/mastercard.svg" alt="" />
+							</div>
+
+							<div class="footer__paysystems-item">
+								<img src="/img/icons/pay/account.svg" alt="" />
+							</div>
+
+							<div class="footer__paysystems-item">
+								<img src="/img/icons/pay/mir.svg" alt="" />
+							</div>
+
+							<div class="footer__paysystems-item">
+								<img src="/img/icons/pay/sbp.svg" alt="" />
+							</div>
+
+							<div class="footer__paysystems-item">
+								<img src="/img/icons/pay/visa.svg" alt="" />
+							</div>
+
+							<div class="footer__paysystems-item">
+								<img src="/img/icons/pay/yandex.svg" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__content">
+						<div class="footer__head">
+							<a href="/" class="footer__logo">Разработка+</a>
+							<div class="footer__socials">
+								<a class="footer__socials-link" rel="nofollow" href="https://t.me/development_plus">
+									<div class="footer__socials-icon">
+										<img src="/img/icons/telegram.svg" alt="" />
+									</div>
+								</a>
+
+								<a class="footer__socials-link" rel="nofollow" href="https://wa.me/+79530526260">
+									<div class="footer__socials-icon">
+										<img src="/img/icons/whatsapp.svg" alt="" />
+									</div>
+								</a>
+
+								<a class="footer__socials-link" rel="nofollow" href="https://vk.com/development.plus">
+									<div class="footer__socials-icon">
+										<img src="/img/icons/vk.svg" alt="" />
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="footer__main">
+							<div class="footer__main-block">
+								<span class="footer__caption">Наши услуги</span>
+								<nav class="footer__nav">
+									<a href="#">Лендинг</a>
+									<a href="#">Сайт-визитка</a>
+									<a href="#">Интернет-магазин</a>
+									<a href="#">Корпоративный сайт</a>
+								</nav>
+							</div>
+
+							<div class="footer__main-block">
+								<span class="footer__caption">Дополнительно</span>
+								<nav class="footer__nav">
+									<a href="#">Дизайн сайтов</a>
+									<a href="#">SEO-оптимизация</a>
+									<a href="#">Адаптивная вёрстка</a>
+									<a href="#">Продвижение сайта</a>
+								</nav>
+							</div>
+
+							<div class="footer__main-block">
+								<span class="footer__caption">Навигация</span>
+								<nav class="footer__nav">
+									<a href="#">Цены</a>
+									<a href="#">Портфолио</a>
+									<a href="#">Отзывы</a>
+									<a href="#">Контакты</a>
+								</nav>
+							</div>
+
+							<div class="footer__main-block">
+								<span class="footer__caption">Контакты</span>
+								<div class="footer__nav">
+									<span>Екатеринбург</span>
+									<a href="tel:+79530526260">+7 (953) 052-62-60</a>
+									<a href="https://t.me/development_plus">@development_plus</a>
+									<a href="mailto:razrabotka_plus@gmail.com">razrabotka_plus@gmail.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="footer__copyright">Разработка+ © 2019 - 2025 Все права защищены</p>
+				</div>
+			</footer>
+
+			<div class="global__messengers">
+				<div class="global__messengers-btn">
+					<i data-lucide="messages-square"></i>
+				</div>
+
+				<div class="global-messengers__list">
+					<div class="global-messengers__list-inner">
+						<a href="mailto:razrabotka_plus@gmail.com" class="global-messengers__item">
+							<img src="/img/icons/chat.svg" alt="Chat" />
+						</a>
+						<a href="https://t.me/development_plus" class="global-messengers__item">
+							<img src="/img/icons/telegram.svg" alt="Telegram" />
+						</a>
+						<a href="https://wa.me/79530526260" class="global-messengers__item">
+							<img src="/img/icons/whatsapp.svg" alt="Whatsapp" />
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="scroll-to-top">
+				<div class="scroll-to-top__icon">
+					<img src="img/icons/arrow-top.svg" alt="" />
+				</div>
+				<div class="scroll-to-top__text">Наверх</div>
+			</div>
+
+			<div class="popup-overlay" id="popupOverlay">
+				<div class="popup" id="popup" role="dialog" aria-labelledby="popupTitle" aria-modal="true">
+					<div class="popup-title" id="popupTitle">Заказать звонок</div>
+					<button class="popup-close" id="popupClose" aria-label="Закрыть попап">✖</button>
+					<form id="contactForm">
+						<input type="text" name="name" placeholder="Ваше имя:" autocomplete="name" required aria-label="Ваше имя" />
+
+						<input
+							class="phone-input"
+							type="tel"
+							name="phone"
+							placeholder="Телефон:"
+							autocomplete="tel"
+							required
+							aria-label="Телефон"
+						/>
+
+						<textarea name="question" placeholder="Ваш вопрос:" aria-label="Ваш вопрос"></textarea>
+
+						<label class="popup-label">
+							<span class="checkbox-wrapper-44">
+								<span class="toggleButton">
+									<input type="checkbox" name="consent" required aria-label="Согласие на обработку данных" />
+								</span>
+							</span>
+							<span>Я согласен(а) с обработкой персональных данных</span>
+						</label>
+
+						<button class="btn" type="submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+
+			<!-- Cookie Banner -->
+			<div class="site-cookie" id="cookieBanner">
+				<div class="site-cookie__text">
+					🍪 Мы используем cookie, чтобы сделать сайт удобнее. Продолжая пользоваться сайтом, вы соглашаетесь с нашей
+					<a href="/privacy" target="_blank">Политикой конфиденциальности</a>
+				</div>
+				<button class="site-cookie__button" onclick="acceptCookies()">Продолжить</button>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/imask"></script>
+		<script src="/libs/swiper/swiper.min.js"></script>
+		<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+		<script src="libs/gsap/gsap.min.js"></script>
+		<script src="/js/cookies.js"></script>
+		<script type="module" src="/js/app.js"></script>
+	</body>
 </html>
