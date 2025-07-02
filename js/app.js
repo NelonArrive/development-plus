@@ -1,4 +1,4 @@
-import { TELEGRAM_TOKEN, TELEGRAM_CHAT_ID } from './config.js'
+import { TELEGRAM_CHAT_ID, TELEGRAM_TOKEN } from './config.js'
 
 // Initialize Lenis
 const lenis = new Lenis()
@@ -7,6 +7,36 @@ function raf(time) {
 	requestAnimationFrame(raf)
 }
 requestAnimationFrame(raf)
+
+// Show more
+document.addEventListener('DOMContentLoaded', function () {
+	const showMoreText = document.querySelector('.show-more-text')
+	const showLessText = document.querySelector('.show-less-text')
+	const textElement = document.querySelector('.text-expandable')
+
+	if (showMoreText) {
+		showMoreText.addEventListener('click', function () {
+			textElement.classList.add('expanded')
+		})
+	}
+
+	if (showLessText) {
+		showLessText.addEventListener('click', function () {
+			textElement.classList.remove('expanded')
+		})
+	}
+
+	function checkScreenSize() {
+		if (window.innerWidth > 640) {
+			textElement.classList.add('expanded')
+		} else {
+			textElement.classList.remove('expanded')
+		}
+	}
+
+	checkScreenSize()
+	window.addEventListener('resize', checkScreenSize)
+})
 
 // Accordion
 document.querySelectorAll('.faq__item-title').forEach(title => {
@@ -189,12 +219,12 @@ const close = document.getElementById('close')
 
 burger.addEventListener('click', () => {
 	menu.classList.add('active')
-	document.body.style.overflow = 'hidden'
+	// document.body.style.overflow = 'hidden'
 })
 
 close.addEventListener('click', () => {
 	menu.classList.remove('active')
-	document.body.style.overflow = ''
+	// document.body.style.overflow = ''
 })
 
 // ================= POPUP =================

@@ -6,8 +6,24 @@
 }
 
 @media screen and (max-width: 1440px) {
+	.about__button {
+		margin: 0;
+	}
 	.intro {
 		margin: 0 32px;
+	}
+	.about__content {
+		grid-template-columns: none;
+		gap: 40px;
+		margin-top: 20px;
+	}
+	.about__img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.about__img img {
+		width: 70%;
 	}
 }
 
@@ -15,8 +31,10 @@
 	.advantage__inner.mp-wrapp {
 		padding: 0 15px;
 	}
+	.about,
 	.advantage {
-		margin: 0 15px;
+		margin: 15px;
+		margin-bottom: 5vw;
 	}
 	.advantage__main {
 		gap: 30px;
@@ -93,6 +111,9 @@
 }
 
 @media screen and (max-width: 1120px) {
+	.about__img img {
+		width: 100%;
+	}
 	.tariffs {
 		padding-bottom: 7vw;
 	}
@@ -176,6 +197,7 @@
 	.tariffs__item-price span {
 		font-size: min(5vw, 24px);
 	}
+	.tariffs__title,
 	.advantage__title {
 		font-size: min(6.875vw, 32px);
 		margin-bottom: min(10vw, 40px);
@@ -299,7 +321,7 @@
 	.menu {
 		opacity: 0;
 		visibility: hidden;
-		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out !important;
 		position: fixed;
 		top: 0;
 		bottom: 0;
@@ -363,10 +385,6 @@
 }
 
 @media screen and (max-width: 768px) {
-	#cursor,
-	#aura {
-		display: none !important;
-	}
 	.intro-circle {
 		background: linear-gradient(to top right, rgb(153 0 255 / 36%), rgb(94 33 180 / 70%));
 	}
@@ -403,6 +421,70 @@
 }
 
 @media screen and (max-width: 640px) {
+	.features__item-icon img {
+		width: 24px;
+		height: 24px;
+	}
+	.about {
+		margin: 0 20px;
+	}
+	.text-hidden {
+		display: none;
+	}
+	.tariffs__title {
+		font-size: 36px;
+		margin-bottom: 40px;
+	}
+
+	.about__content {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+
+	.about__text {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.about__text h3 {
+		display: none;
+	}
+	.show-more-text {
+		display: inline;
+	}
+	.text-expandable .text-hidden {
+		display: none;
+	}
+	.text-expandable.expanded .text-hidden {
+		display: block;
+	}
+
+	.text-expandable.expanded .show-more-text {
+		display: none;
+	}
+
+	.text-expandable.expanded .show-less-text {
+		display: inline;
+	}
+
+	.show-less-text {
+		display: none;
+		color: #3a087f;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		text-decoration: underline;
+		text-decoration-color: transparent;
+		margin-left: 5px;
+	}
+
+	.show-less-text:hover {
+		text-decoration-color: #3a087f;
+	}
+	.about__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	.site-cookie__button {
 		font-size: 10px;
 		padding: 11px 16px;
@@ -473,6 +555,20 @@
 		padding: 20px;
 		border-radius: 12px;
 	}
+	.reviews__item {
+		gap: 0px;
+		justify-content: space-between;
+	}
+	.reviews__item-header {
+		margin-bottom: 10px;
+	}
+	.verified-badge span {
+		display: none;
+	}
+	.verified-badge {
+		padding: 4px;
+		margin-left: 4px;
+	}
 	.advantage__note-title {
 		font-size: min(4.0625vw, 14px);
 		padding: 7px;
@@ -537,6 +633,7 @@
 		margin-bottom: min(2.5vw, 16px);
 	}
 	.intro,
+	.about,
 	.advantage {
 		margin: 0;
 		border-radius: 0px;
