@@ -144,7 +144,7 @@ const swiperPortfolio = new Swiper('.swiper--portfolio', {
 	spaceBetween: 30,
 	slidesPerView: 2,
 	speed: 500,
-	autoplay: { delay: 6000 },
+	// autoplay: { delay: 6000 },
 
 	breakpoints: {
 		0: {
@@ -164,6 +164,15 @@ const swiperPortfolio = new Swiper('.swiper--portfolio', {
 		prevEl: '.swiper-button-prev'
 	}
 })
+
+const showThankYouPopup = () => {
+	const popup = document.getElementById('thankYouPopup')
+	popup.classList.add('show')
+
+	setTimeout(() => {
+		popup.classList.remove('show')
+	}, 4000)
+}
 
 // Send message telegram
 const forms = document.querySelectorAll('form')
@@ -209,6 +218,7 @@ forms.forEach(form => {
 		})
 
 		form.reset()
+		showThankYouPopup()
 	})
 })
 
@@ -273,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (cursor) cursor.style.display = 'none'
 		if (aura) aura.style.display = 'none'
 
-		return // Прекращаем выполнение остального кода
+		return
 	}
 
 	const body = document.querySelector('body')

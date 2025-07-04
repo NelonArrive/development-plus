@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+/* 	color: #3a087f;
+	color: #490b9f;
+	color: #5d17bf;
+	color: #6c38cc;
+	color: #292929;
+	color: #333;
+	color: #777; */
+
 * {
 	scrollbar-width: thin;
 	scrollbar-color: #5d17bf #c6c2cd;
@@ -928,6 +936,7 @@ section {
 	align-items: center;
 }
 .portfolio__item {
+	height: auto;
 	width: calc(50% - 50px);
 	border-radius: 30px;
 	padding: 30px 10px;
@@ -945,6 +954,9 @@ section {
 .portfolio__item-img {
 }
 .portfolio__item-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	border-radius: 20px;
 }
 .portfolio__item-img-text {
@@ -967,9 +979,14 @@ section {
 	width: 100%;
 }
 .portfolio__item-title-text {
+	cursor: pointer;
 	padding: 10px;
 	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.701);
+	transition: all 0.2s ease-in;
+	background-color: #ffffffb3;
+}
+.portfolio__item-title-text:hover {
+	background-color: #b3b3b3b3;
 }
 .portfolio__item-title-icon {
 	display: none;
@@ -1506,12 +1523,6 @@ textarea {
 	transition: transform 0.3s;
 }
 .site-cookie.show {
-	color: #3a087f;
-	color: #490b9f;
-	color: #5d17bf;
-	color: #6c38cc;
-	color: #292929;
-	color: #333;
 	color: #777;
 	transform: none;
 }
@@ -1578,4 +1589,29 @@ textarea {
 #aura.hidden,
 #cursor.hidden {
 	transform: scale(0.001);
+}
+.thank-you-popup {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	backdrop-filter: blur(10px);
+	border: 1px solid #4caf50;
+	padding: 15px 25px;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(5, 176, 56, 0.2);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.5s, transform 0.5s;
+	z-index: 9999;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.thank-you-popup.show {
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+	pointer-events: auto;
 }
